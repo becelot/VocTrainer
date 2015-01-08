@@ -24,6 +24,10 @@ namespace VocabularyTrainer
         public MainWindow()
         {
             InitializeComponent();
+            VocabularyDatabase.Load();
+            Vocabulary voc = new Vocabulary("Guten Tag", "こんにちは", "konnichiha", "Ausdruck", "1");
+            VocabularyDatabase.Instance.vocs.Add(voc);
+            VocabularyDatabase.Save();
         }
     }
 }
