@@ -37,7 +37,7 @@ namespace VocabularyTrainer
 
         private void ButtonAddVoc_Click(object sender, RoutedEventArgs e)
         {
-
+            FlyoutAddVocabulary.IsOpen = true;
         }
 
     }

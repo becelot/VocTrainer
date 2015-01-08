@@ -6,7 +6,7 @@
     <Grid/>
     <Controls:MetroWindow.Flyouts>
         <Controls:FlyoutsControl>
-            <Controls:Flyout Header="Flyout" Position="Left" Width="200">
+            <Controls:Flyout Name="FlyoutAddVocabulary" Header="Flyout" Position="Left" Width="Auto">
                 <!-- Your custom content here -->
             </Controls:Flyout>
         </Controls:FlyoutsControl>
