@@ -101,7 +101,7 @@ namespace VocabularyTrainer
 
         private void MetroWindow_SourceInitialized(object sender, EventArgs e)
         {
-            WindowAspectRatio.Register((Window)sender);
+            //WindowAspectRatio.Register((Window)sender);
         }
 
     }

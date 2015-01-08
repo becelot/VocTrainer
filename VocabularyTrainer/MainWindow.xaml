@@ -12,6 +12,7 @@
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="/Resources/Icons.xaml" />
             </ResourceDictionary.MergedDictionaries>
+            <local:PercentageConverter x:Key="PercentageConverter"></local:PercentageConverter>
         </ResourceDictionary>
     </Window.Resources>
     
@@ -19,8 +20,8 @@
     <Controls:MetroWindow.Flyouts>
         <Controls:FlyoutsControl Margin="0,30,0,0">
             <Controls:Flyout x:Name="FlyoutAddVocabulary" Header="Flyout" Position="Left"
-                             Width="{Binding ActualWidth, RelativeSource={RelativeSource AncestorType=local:MainWindow}}"
-                             Height="{Binding ActualHeight, RelativeSource={RelativeSource AncestorType=local:MainWindow}}"
+                            Width="{Binding ActualWidth, Converter={StaticResource PercentageConverter}, ConverterParameter=1, RelativeSource={RelativeSource AncestorType=local:MainWindow}}"
+                             Height="{Binding ActualHeight, Converter={StaticResource PercentageConverter}, ConverterParameter=1, RelativeSource={RelativeSource AncestorType=local:MainWindow}}"
                              Theme="Dark">
                 <flyout:AddVocabulary x:Name="AddVocabulary"></flyout:AddVocabulary>
             </Controls:Flyout>
