@@ -29,5 +29,16 @@ namespace VocabularyTrainer
             VocabularyDatabase.Instance.vocs.Add(voc);
             VocabularyDatabase.Save();
         }
+
+        private void ButtonSettings_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ButtonAddVoc_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
     }
 }
