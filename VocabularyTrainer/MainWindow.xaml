@@ -19,7 +19,7 @@
     
     <Controls:MetroWindow.Flyouts>
         <Controls:FlyoutsControl Margin="0,30,0,0">
-            <Controls:Flyout x:Name="FlyoutAddVocabulary" Header="Flyout" Position="Top"
+            <Controls:Flyout x:Name="FlyoutAddVocabulary" Position="Top" Header="Add"
                             Width="{Binding ActualWidth, Converter={StaticResource PercentageConverter}, ConverterParameter=1, RelativeSource={RelativeSource AncestorType=local:MainWindow}}"
                              Height="{Binding ActualHeight, Converter={StaticResource PercentageConverter}, ConverterParameter=0.2, RelativeSource={RelativeSource AncestorType=local:MainWindow}}"
                              Theme="Dark">

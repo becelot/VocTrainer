@@ -21,15 +21,21 @@ namespace VocabularyTrainer
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow
+    public partial class MainWindow : MetroWindow
     {
         public MainWindow()
         {
             InitializeComponent();
+            Helper.MainWindow = this;
             VocabularyDatabase.Load();
             Vocabulary voc = new Vocabulary("Guten Tag", "こんにちは", "konnichiha", "Ausdruck", "1");
             VocabularyDatabase.Instance.vocs.Add(voc);
             VocabularyDatabase.Save();
+
+            if (Config.Instance.categories == null)
+            {
+                Config.Instance.categories = new List<string>();
+            }
         }
 
         private void ButtonSettings_Click(object sender, RoutedEventArgs e)

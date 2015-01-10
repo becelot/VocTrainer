@@ -10,6 +10,9 @@ namespace VocabularyTrainer
 {
     class Helper
     {
+
+        public static MainWindow MainWindow { get; set; }
+
         public static string RemoveInvalidPathChars(string s)
         {
             var invalidChars = new string(Path.GetInvalidPathChars());

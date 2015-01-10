@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MahApps.Metro.Controls.Dialogs;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,27 @@ namespace VocabularyTrainer.Flyouts
         public AddVocabulary()
         {
             InitializeComponent();
+        }
+
+        private async void comboCategory_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (this.comboCategory.SelectedValue.Equals("Add.."))
+            {
+                var result = await Helper.MainWindow.ShowInputAsync("Neue Kategorie hinzufügen", "Wie heißt die neue Kategorie?");
+
+                if (result != null)
+                {
+                    string newCat = (string)result;
+                    if (Config.Instance.categories.FindIndex( (x) => { return x.Equals(newCat); }) >= 0)
+                    {
+                        await Helper.MainWindow.ShowMessageAsync("Neue Kategorie hinzufügen", "Kategorie existiert berets!");
+                        return;
+                    }
+                    Config.Instance.categories.Add(result);
+                    this.comboCategory.Items.Add(result);
+                    this.comboCategory.SelectedIndex = this.comboCategory.Items.Count - 1;
+                }
+            }
         }
     }
 }

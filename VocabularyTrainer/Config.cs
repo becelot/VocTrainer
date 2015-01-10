@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace VocabularyTrainer
 {
@@ -13,6 +15,12 @@ namespace VocabularyTrainer
         public readonly string AppDataPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\VocabularyTrainer";
         public bool SaveConfigInAppData = true;
         public bool SaveDataInAppData = true;
+
+        [XmlArray("Categories")]
+        [XmlArrayItem("Categorie")]
+        [DefaultValue(null)]
+        public List<string> categories { get; set; }
+
 
         public string ConfigPath
         {
