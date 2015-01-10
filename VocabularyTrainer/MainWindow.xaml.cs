@@ -31,11 +31,7 @@ namespace VocabularyTrainer
             Vocabulary voc = new Vocabulary("Guten Tag", "こんにちは", "konnichiha", "Ausdruck", "1");
             VocabularyDatabase.Instance.vocs.Add(voc);
             VocabularyDatabase.Save();
-
-            if (Config.Instance.categories == null)
-            {
-                Config.Instance.categories = new List<string>();
-            }
+            Config.Load();
         }
 
         private void ButtonSettings_Click(object sender, RoutedEventArgs e)
@@ -45,6 +41,10 @@ namespace VocabularyTrainer
 
         private void ButtonAddVoc_Click(object sender, RoutedEventArgs e)
         {
+            foreach (string s in Config.Instance.categories)
+            {
+                AddVocabulary.comboCategory.Items.Add(s);
+            }
             FlyoutAddVocabulary.IsOpen = true;
         }
 
@@ -110,5 +110,10 @@ namespace VocabularyTrainer
             //WindowAspectRatio.Register((Window)sender);
         }
 
+        private void MetroWindow_Closed(object sender, EventArgs e)
+        {
+            Config.Save();
+            VocabularyDatabase.Save();
+        }
     }
 }

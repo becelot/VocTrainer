@@ -5,7 +5,8 @@
                         xmlns:local="clr-namespace:VocabularyTrainer"
                         xmlns:flyout="clr-namespace:VocabularyTrainer.Flyouts"
                         Title="Vocabulary Trainer" Height="620" Width="550" MinHeight="620" MinWidth="550"
-                        SourceInitialized="MetroWindow_SourceInitialized">
+                        SourceInitialized="MetroWindow_SourceInitialized"
+                        Closed="MetroWindow_Closed">
     <Grid/>
     <Window.Resources>
         <ResourceDictionary>

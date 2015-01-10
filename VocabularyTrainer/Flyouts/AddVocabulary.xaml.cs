@@ -45,5 +45,26 @@ namespace VocabularyTrainer.Flyouts
                 }
             }
         }
+
+        private async void comboLection_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (this.comboLection.SelectedValue.Equals("Add.."))
+            {
+                var result = await Helper.MainWindow.ShowInputAsync("Neue Lektion hinzufügen", "Wie heißt die neue Lektion?");
+
+                if (result != null)
+                {
+                    string newLection = result;
+                    if (Config.Instance.lections.FindIndex((x) => { return x.Equals(newLection); }) >= 0)
+                    {
+                        await Helper.MainWindow.ShowMessageAsync("Neue Lektion hinzufügen", "Lektion existiert berets!");
+                        return;
+                    }
+                    Config.Instance.lections.Add(result);
+                    this.comboLection.Items.Add(result);
+                    this.comboLection.SelectedIndex = this.comboLection.Items.Count - 1;
+                }
+            }
+        }
     }
 }
