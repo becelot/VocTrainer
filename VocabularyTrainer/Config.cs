@@ -9,7 +9,7 @@ using System.Xml.Serialization;
 
 namespace VocabularyTrainer
 {
-    class Config
+    public class Config
     {
         private static Config _config; //= new Config();
 

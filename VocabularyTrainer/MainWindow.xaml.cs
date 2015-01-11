@@ -32,6 +32,16 @@ namespace VocabularyTrainer
             VocabularyDatabase.Instance.vocs.Add(voc);
             VocabularyDatabase.Save();
             Config.Load();
+
+            foreach (string s in Config.Instance.categories)
+            {
+                AddVocabulary.comboCategory.Items.Add(s);
+            }
+
+            foreach (string s in Config.Instance.lections)
+            {
+                AddVocabulary.comboLection.Items.Add(s);
+            }
         }
 
         private void ButtonSettings_Click(object sender, RoutedEventArgs e)
@@ -41,10 +51,6 @@ namespace VocabularyTrainer
 
         private void ButtonAddVoc_Click(object sender, RoutedEventArgs e)
         {
-            foreach (string s in Config.Instance.categories)
-            {
-                AddVocabulary.comboCategory.Items.Add(s);
-            }
             FlyoutAddVocabulary.IsOpen = true;
         }
 
