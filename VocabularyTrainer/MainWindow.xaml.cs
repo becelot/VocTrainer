@@ -28,9 +28,6 @@ namespace VocabularyTrainer
             InitializeComponent();
             Helper.MainWindow = this;
             VocabularyDatabase.Load();
-            Vocabulary voc = new Vocabulary("Guten Tag", "こんにちは", "konnichiha", "Ausdruck", "1");
-            VocabularyDatabase.Instance.vocs.Add(voc);
-            VocabularyDatabase.Save();
             Config.Load();
 
             foreach (string s in Config.Instance.categories)

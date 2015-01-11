@@ -7,10 +7,7 @@
                         Title="Vocabulary Trainer" Height="620" Width="550" MinHeight="620" MinWidth="550"
                         SourceInitialized="MetroWindow_SourceInitialized"
                         Closed="MetroWindow_Closed">
-    <Grid>
-        <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="89,81,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
-        <Button x:Name="button1" Content="Button" HorizontalAlignment="Left" Margin="243,81,0,0" VerticalAlignment="Top" Width="75" Click="button1_Click"/>
-    </Grid>
+    <Grid/>
     <Window.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
