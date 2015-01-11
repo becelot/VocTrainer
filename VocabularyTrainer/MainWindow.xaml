@@ -26,6 +26,12 @@
                              Theme="Dark">
                 <flyout:AddVocabulary x:Name="AddVocabulary"></flyout:AddVocabulary>
             </Controls:Flyout>
+            <Controls:Flyout x:Name="FlyoutOptions" Position="Left" Header="Options"
+                            Width="{Binding ActualWidth, Converter={StaticResource PercentageConverter}, ConverterParameter=1, RelativeSource={RelativeSource AncestorType=local:MainWindow}}"
+                             Height="{Binding ActualHeight, Converter={StaticResource PercentageConverter}, ConverterParameter=1, RelativeSource={RelativeSource AncestorType=local:MainWindow}}"
+                             Theme="Dark">
+                <flyout:Options x:Name="Options"></flyout:Options>
+            </Controls:Flyout>
         </Controls:FlyoutsControl>
     </Controls:MetroWindow.Flyouts>
 

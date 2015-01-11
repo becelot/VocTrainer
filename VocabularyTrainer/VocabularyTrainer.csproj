@@ -65,11 +65,18 @@
     <Compile Include="Flyouts\AddVocabulary.xaml.cs">
       <DependentUpon>AddVocabulary.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Flyouts\Options.xaml.cs">
+      <DependentUpon>Options.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Utility\Helper.cs" />
     <Compile Include="Utility\Logger.cs" />
     <Compile Include="Utility\PercentageConverter.cs" />
     <Compile Include="Utility\XmlManager.cs" />
     <Page Include="Flyouts\AddVocabulary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Flyouts\Options.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

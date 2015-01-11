@@ -43,7 +43,7 @@ namespace VocabularyTrainer
 
         private void ButtonSettings_Click(object sender, RoutedEventArgs e)
         {
-
+            FlyoutOptions.IsOpen = true;
         }
 
         private void ButtonAddVoc_Click(object sender, RoutedEventArgs e)
