@@ -10,8 +10,8 @@
             <RowDefinition Height="25*"/>
             <RowDefinition Height="26*"/>
             <RowDefinition Height="14*"/>
-            <RowDefinition Height="25*"/>
-            <RowDefinition Height="3*"/>
+            <RowDefinition Height="26*"/>
+            <RowDefinition Height="11*"/>
             <RowDefinition Height="10*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
@@ -36,12 +36,8 @@
         <TextBox x:Name="textRom" Grid.Column="8" Grid.Row="2" TextWrapping="Wrap" Text="" Grid.ColumnSpan="3" TextChanged="canAddPropertyChanged"/>
         <Label x:Name="labelRomaji" Content="Romanji" Grid.Column="8" Grid.Row="1" Grid.ColumnSpan="5"/>
         <ComboBox x:Name="comboCategory" Grid.Column="2" Grid.ColumnSpan="3" Grid.Row="4" SelectionChanged="comboCategory_SelectionChanged" Margin="0,0,0,2" Grid.RowSpan="2" >
-            <system:String>Add..</system:String>
-            <Separator/>
         </ComboBox>
         <ComboBox x:Name="comboLection" Grid.Column="6" Grid.ColumnSpan="3" SelectionChanged="comboLection_SelectionChanged" Grid.Row="4" Margin="0,0,0,2" Grid.RowSpan="2" >
-            <system:String>Add..</system:String>
-            <Separator/>
         </ComboBox>
         <Button x:Name="buttonAdd" Content="Add" Grid.Column="10" Grid.Row="4" Grid.ColumnSpan="2" Style="{StaticResource AccentedSquareButtonStyle}" Click="buttonAdd_Click" IsEnabled="False"/>
     </Grid>

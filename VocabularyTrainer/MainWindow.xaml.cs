@@ -30,14 +30,19 @@ namespace VocabularyTrainer
             VocabularyDatabase.Load();
             Config.Load();
 
+            Config.Instance.SaveDataInAppData = false;
+            Config.Save();
+
             foreach (string s in Config.Instance.categories)
             {
                 AddVocabulary.comboCategory.Items.Add(s);
+                Options.comboCategory.Items.Add(s);
             }
 
             foreach (string s in Config.Instance.lections)
             {
                 AddVocabulary.comboLection.Items.Add(s);
+                Options.comboLection.Items.Add(s);
             }
         }
 
