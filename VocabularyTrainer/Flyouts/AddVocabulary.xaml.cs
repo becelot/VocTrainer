@@ -37,10 +37,9 @@ namespace VocabularyTrainer.Flyouts
 
         private void buttonAdd_Click(object sender, RoutedEventArgs e)
         {
-
             Vocabulary voc = new Vocabulary(this.textGerman.Text, this.textJap.Text, this.textRom.Text, this.comboCategory.Text, this.comboLection.Text);
 
-            if (VocabularyDatabase.Instance.vocs.FindIndex((x) => { return (x.german.Equals(voc.german)); }) < 0) {
+            if (!VocabularyDatabase.Instance.vocs.Contains(voc)) {
                 VocabularyDatabase.Instance.vocs.Add(voc);
                 textGerman.Text = "";
                 textJap.Text = "";

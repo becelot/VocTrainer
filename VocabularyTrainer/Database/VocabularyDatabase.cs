@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
 using System.IO;
+using System.Collections.ObjectModel;
 
 namespace VocabularyTrainer
 {
@@ -14,11 +15,11 @@ namespace VocabularyTrainer
 
         [XmlArray(ElementName = "Database")]
         [XmlArrayItem(ElementName = "Vocabulary")]
-        public List<Vocabulary> vocs;
+        public ObservableCollection<Vocabulary> vocs;
 
         public VocabularyDatabase()
         {
-            vocs = new List<Vocabulary>();
+            vocs = new ObservableCollection<Vocabulary>();
         }
 
         public static VocabularyDatabase Instance

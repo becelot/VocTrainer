@@ -4,10 +4,10 @@
                         xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
                         xmlns:local="clr-namespace:VocabularyTrainer"
                         xmlns:flyout="clr-namespace:VocabularyTrainer.Flyouts"
+                        xmlns:core="clr-namespace:System;assembly=mscorlib"
                         Title="Vocabulary Trainer" Height="620" Width="550" MinHeight="620" MinWidth="550"
                         SourceInitialized="MetroWindow_SourceInitialized"
                         Closed="MetroWindow_Closed">
-    <Grid/>
     <Window.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
@@ -70,4 +70,17 @@
         </Controls:WindowCommands>
     </Controls:MetroWindow.RightWindowCommands>
 
+    
+        <Grid>
+        <DataGrid x:Name="dataGrid" AutoGenerateColumns="False" ItemsSource="{Binding}" CanUserAddRows="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Deutsch" Binding="{Binding german}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Japanisch" Binding="{Binding japanese}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Romaji" Binding="{Binding romaji}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Kategorie" Binding="{Binding cat}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Lektion" Binding="{Binding lection}" Width="*"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+    </Grid>
 </Controls:MetroWindow>

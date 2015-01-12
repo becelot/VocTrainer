@@ -18,7 +18,7 @@ namespace VocabularyTrainer
         [DefaultValue(true)]
         public bool? SaveConfigInAppData = null;
 
-        [DefaultValue(true)]
+        [DefaultValue(false)]
         public bool? SaveDataInAppData = null;
 
         [XmlArray("Categories")]

@@ -15,6 +15,8 @@ using System.Windows.Shapes;
 using MahApps.Metro.Controls;
 using System.Windows.Interop;
 using System.Runtime.InteropServices;
+using System.Collections.ObjectModel;
+using System.Windows.Forms;
 
 namespace VocabularyTrainer
 {
@@ -27,8 +29,9 @@ namespace VocabularyTrainer
         {
             InitializeComponent();
             Helper.MainWindow = this;
-            VocabularyDatabase.Load();
             Config.Load();
+            VocabularyDatabase.Load();
+            
 
             Config.Instance.SaveDataInAppData = false;
             Config.Save();
@@ -43,6 +46,14 @@ namespace VocabularyTrainer
             {
                 AddVocabulary.comboLection.Items.Add(s);
                 Options.comboLection.Items.Add(s);
+            }
+
+            ObservableCollection<Vocabulary> custdata = VocabularyDatabase.Instance.vocs;
+
+            dataGrid.DataContext = custdata;
+            foreach(Vocabulary voc in VocabularyDatabase.Instance.vocs)
+            {
+                Logger.WriteLine(voc.german, "Load Test");
             }
         }
 
