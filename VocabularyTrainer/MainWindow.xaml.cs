@@ -51,10 +51,6 @@ namespace VocabularyTrainer
             ObservableCollection<Vocabulary> custdata = VocabularyDatabase.Instance.vocs;
 
             dataGrid.DataContext = custdata;
-            foreach(Vocabulary voc in VocabularyDatabase.Instance.vocs)
-            {
-                Logger.WriteLine(voc.german, "Load Test");
-            }
         }
 
         private void ButtonSettings_Click(object sender, RoutedEventArgs e)

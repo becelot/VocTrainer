@@ -5,7 +5,9 @@ using System.Text;
 
 namespace VocabularyTrainer
 {
+#pragma warning disable CS0659
     public class Vocabulary
+#pragma warning restore CS0659
     {
         public string german { get; set; }
         public string japanese { get; set; }
