@@ -30,11 +30,12 @@ namespace VocabularyTrainer
             InitializeComponent();
             Helper.MainWindow = this;
             Config.Load();
-            VocabularyDatabase.Load();
-            
 
             Config.Instance.SaveDataInAppData = false;
             Config.Save();
+
+            VocabularyDatabase.Load();
+
 
             foreach (string s in Config.Instance.categories)
             {
