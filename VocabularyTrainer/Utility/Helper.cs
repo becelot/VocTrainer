@@ -49,14 +49,21 @@ namespace VocabularyTrainer
             return path + extension;
         }
 
-        public static InputLanguage GetInputLanguageByName(string inputName)
+        public static void SetInputLanguageByName(string inputName)
         {
             foreach (InputLanguage lang in InputLanguage.InstalledInputLanguages)
             {
-                if (lang.Culture.EnglishName.ToLower().StartsWith(inputName))
-                    return lang;
+                if (lang.Culture.EnglishName.ToLower().StartsWith(inputName.ToLower()))
+                {
+                    Logger.WriteLine(lang.Culture.EnglishName, "Changed layout");
+                    InputLanguage.CurrentInputLanguage = lang;
+                }
             }
-            return null;
+        }
+
+        public static void SetInputLanguage(InputLanguage lang)
+        {
+            InputLanguage.CurrentInputLanguage = lang;
         }
     }
 }

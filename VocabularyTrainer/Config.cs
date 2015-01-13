@@ -29,7 +29,14 @@ namespace VocabularyTrainer
         [XmlArrayItem("Lection")]
         public List<string> lections { get; set; }
 
-        private Config() { }
+        private Config() {
+            this.DefaultLang = System.Windows.Forms.InputLanguage.CurrentInputLanguage;
+        }
+
+        [XmlIgnore]
+        public System.Windows.Forms.InputLanguage DefaultLang {
+            get; set;
+        }
 
         public static Config Instance
         {

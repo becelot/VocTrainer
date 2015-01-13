@@ -72,5 +72,15 @@ namespace VocabularyTrainer.Flyouts
                 }
             }
         }
+
+        private void textJap_GotKeyboardFocus(object sender, KeyboardFocusChangedEventArgs e)
+        {
+            Helper.SetInputLanguageByName("japanese");
+        }
+
+        private void textRom_GotKeyboardFocus(object sender, KeyboardFocusChangedEventArgs e)
+        {
+            Helper.SetInputLanguage(Config.Instance.DefaultLang);
+        }
     }
 }
