@@ -98,11 +98,6 @@
                         <Trigger Property="IsSelected" Value="True">
                             <Setter Property="Background" Value="DarkGray"></Setter>
                         </Trigger>
-                        <DataTrigger Binding="{Binding Path=Selectable}" Value="False">
-                            <DataTrigger.Setters>
-                                <Setter Property="Background" Value="LightGray" />
-                            </DataTrigger.Setters>
-                        </DataTrigger>
                     </Style.Triggers>
                 </Style>
             </DataGrid.RowStyle>

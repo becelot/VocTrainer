@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace VocabularyTrainer
 {
@@ -46,6 +47,16 @@ namespace VocabularyTrainer
             }
 
             return path + extension;
+        }
+
+        public static InputLanguage GetInputLanguageByName(string inputName)
+        {
+            foreach (InputLanguage lang in InputLanguage.InstalledInputLanguages)
+            {
+                if (lang.Culture.EnglishName.ToLower().StartsWith(inputName))
+                    return lang;
+            }
+            return null;
         }
     }
 }
