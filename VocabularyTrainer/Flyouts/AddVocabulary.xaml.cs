@@ -44,6 +44,7 @@ namespace VocabularyTrainer.Flyouts
                 textGerman.Text = "";
                 textJap.Text = "";
                 textRom.Text = "";
+                textGerman.Focus();
             } else
             {
                 Helper.MainWindow.ShowMessageAsync("Vokabel existiert bereits", "Diese Vokabel ist bereits vorhanden");
@@ -58,6 +59,17 @@ namespace VocabularyTrainer.Flyouts
             } else
             {
                 buttonAdd.IsEnabled = false;
+            }
+        }
+
+        private void textGerman_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Return)
+            {
+                if (buttonAdd.IsEnabled)
+                {
+                    this.buttonAdd_Click(sender, null);
+                }
             }
         }
     }
