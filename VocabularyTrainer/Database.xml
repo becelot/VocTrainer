@@ -400,5 +400,152 @@
       <cat>Verben</cat>
       <lection>9</lection>
     </Vocabulary>
+    <Vocabulary>
+      <german>Universität</german>
+      <japanese>だいがく</japanese>
+      <romaji>daigaku</romaji>
+      <cat>Nomen</cat>
+      <lection>1</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Kaufhaus</german>
+      <japanese>デパート</japanese>
+      <romaji>depaato</romaji>
+      <cat>Nomen</cat>
+      <lection>11</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>draußen</german>
+      <japanese>そと</japanese>
+      <romaji>soto</romaji>
+      <cat>Adjektiv</cat>
+      <lection>11</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Raum / Zimmer</german>
+      <japanese>へや</japanese>
+      <romaji>heya</romaji>
+      <cat>Nomen</cat>
+      <lection>11</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Toilette</german>
+      <japanese>トイレ</japanese>
+      <romaji>toire</romaji>
+      <cat>Nomen</cat>
+      <lection>11</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Park</german>
+      <japanese>こうえん</japanese>
+      <romaji>kooen</romaji>
+      <cat>Nomen</cat>
+      <lection>11</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Tempel</german>
+      <japanese>おてら</japanese>
+      <romaji>otera</romaji>
+      <cat>Nomen</cat>
+      <lection>11</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Bahnhof</german>
+      <japanese>えき</japanese>
+      <romaji>eki</romaji>
+      <cat>Nomen</cat>
+      <lection>11</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Sport</german>
+      <japanese>スポーツ</japanese>
+      <romaji>supootsu</romaji>
+      <cat>Nomen</cat>
+      <lection>11</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Film</german>
+      <japanese>えいが</japanese>
+      <romaji>eega</romaji>
+      <cat>Nomen</cat>
+      <lection>11</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Fremdsprache</german>
+      <japanese>がいこく語</japanese>
+      <romaji>daikokugo</romaji>
+      <cat>Nomen</cat>
+      <lection>11</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Fotografie</german>
+      <japanese>しゃしん</japanese>
+      <romaji>shashin</romaji>
+      <cat>Nomen</cat>
+      <lection>11</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>nehmen</german>
+      <japanese>とります</japanese>
+      <romaji>torimasu</romaji>
+      <cat>Verben</cat>
+      <lection>11</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>langsam</german>
+      <japanese>ゆっくり</japanese>
+      <romaji>yukkuri</romaji>
+      <cat>Adverb</cat>
+      <lection>11</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Plan</german>
+      <japanese>よてい</japanese>
+      <romaji>yotee</romaji>
+      <cat>Nomen</cat>
+      <lection>11</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Überstunde</german>
+      <japanese>ざんきょう</japanese>
+      <romaji>zankyoo</romaji>
+      <cat>Nomen</cat>
+      <lection>11</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Terminkalender</german>
+      <japanese>てちょう</japanese>
+      <romaji>techoo</romaji>
+      <cat>Nomen</cat>
+      <lection>11</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>gut passen</german>
+      <japanese>いいです</japanese>
+      <romaji>iidesu</romaji>
+      <cat>Verben</cat>
+      <lection>10</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>nicht passen</german>
+      <japanese>だめです</japanese>
+      <romaji>dame desu</romaji>
+      <cat>Verben</cat>
+      <lection>10</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>in Ordnung sein</german>
+      <japanese>だいじょうぶです</japanese>
+      <romaji>daijoobu desu</romaji>
+      <cat>Verben</cat>
+      <lection>10</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>immer passen</german>
+      <japanese>いつでも　いいです</japanese>
+      <romaji>itsudemo iidesu</romaji>
+      <cat>Verben</cat>
+      <lection>10</lection>
+    </Vocabulary>
   </Database>
 </VocabularyDatabase>

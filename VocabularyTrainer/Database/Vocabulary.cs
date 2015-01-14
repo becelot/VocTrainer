@@ -38,7 +38,7 @@ namespace VocabularyTrainer
                 return false;
             }
             Vocabulary v = (Vocabulary)obj;
-            return v.german == this.german;
+            return v.german == this.german && v.japanese == this.japanese;
         }
     }
 }
