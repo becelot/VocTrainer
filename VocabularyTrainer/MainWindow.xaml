@@ -87,7 +87,7 @@
                             <Setter Property="Background" Value="Blue" />
                         </MultiTrigger>
                         <Trigger Property="AlternationIndex" Value="1">
-                            <Setter Property="Background" Value="WhiteSmoke" />
+                            <Setter Property="Background" Value="LightGray" />
                         </Trigger>
                         <MultiTrigger>
                             <MultiTrigger.Conditions>
