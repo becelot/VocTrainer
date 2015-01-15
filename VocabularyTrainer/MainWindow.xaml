@@ -73,7 +73,7 @@
 
     
         <Grid>
-        <DataGrid x:Name="dataGrid" AutoGenerateColumns="False" ItemsSource="{Binding}" CanUserAddRows="False"  AlternationCount="2">        
+        <DataGrid x:Name="dataGrid" AutoGenerateColumns="False" ItemsSource="{Binding}" CanUserAddRows="False"  AlternationCount="2" CanUserDeleteRows="False" SelectionUnit="FullRow" SelectionMode="Single">        
             <DataGrid.RowStyle>
                 <Style TargetType="{x:Type DataGridRow}">
                     <Style.Triggers>
