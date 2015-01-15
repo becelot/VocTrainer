@@ -3,6 +3,7 @@
                         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                         xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
                         xmlns:local="clr-namespace:VocabularyTrainer"
+                        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
                         xmlns:flyout="clr-namespace:VocabularyTrainer.Flyouts"
                         xmlns:core="clr-namespace:System;assembly=mscorlib"
                         Title="Vocabulary Trainer" Height="620" Width="550" MinHeight="620" MinWidth="550"
@@ -81,6 +82,7 @@
             <Grid>
                 <Label Content="Suchen" HorizontalAlignment="Left" Margin="21,10,0,0" VerticalAlignment="Top" Width="67"/>
                 <TextBox HorizontalAlignment="Left" Height="23" Margin="88,11,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+                <xctk:CheckListBox Margin="293,10,10,24" Name="lectionCeckBox"></xctk:CheckListBox>
             </Grid>
         </GroupBox>
         <DataGrid x:Name="dataGrid" AutoGenerateColumns="False" ItemsSource="{Binding}" CanUserAddRows="False"  AlternationCount="2" CanUserDeleteRows="False" SelectionUnit="FullRow" SelectionMode="Single" Grid.Row="1">

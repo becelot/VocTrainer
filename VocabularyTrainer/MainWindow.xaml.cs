@@ -42,6 +42,7 @@ namespace VocabularyTrainer
             {
                 AddVocabulary.comboCategory.Items.Add(s);
                 Options.comboCategory.Items.Add(s);
+                lectionCeckBox.Items.Add(s);
             }
 
             foreach (string s in Config.Instance.lections)
