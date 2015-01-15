@@ -108,6 +108,11 @@
                 <DataGridTextColumn Header="Kategorie" Binding="{Binding cat}" Width="*"></DataGridTextColumn>
                 <DataGridTextColumn Header="Lektion" Binding="{Binding lection}" Width="*"></DataGridTextColumn>
             </DataGrid.Columns>
+            <DataGrid.ContextMenu>
+                <ContextMenu>
+                    <MenuItem x:Name="contextRemoveClick" Header="Delete" Click="contextRemove_Click"></MenuItem>
+                </ContextMenu>
+            </DataGrid.ContextMenu>
         </DataGrid>
 
     </Grid>

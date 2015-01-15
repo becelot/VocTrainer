@@ -17,6 +17,7 @@ using System.Windows.Interop;
 using System.Runtime.InteropServices;
 using System.Collections.ObjectModel;
 using System.Windows.Forms;
+using System.ComponentModel;
 
 namespace VocabularyTrainer
 {
@@ -51,7 +52,12 @@ namespace VocabularyTrainer
 
             ObservableCollection<Vocabulary> custdata = VocabularyDatabase.Instance.vocs;
 
-            dataGrid.DataContext = custdata;
+            var itemSourceView = new CollectionViewSource() { Source = VocabularyDatabase.Instance.vocs };
+            ICollectionView Itemlist = itemSourceView.View;
+
+           // Itemlist.Filter = new Predicate<object>( item => ((Vocabulary)item).lection.Equals("11"));
+
+            dataGrid.ItemsSource = Itemlist;
         }
 
         private void ButtonSettings_Click(object sender, RoutedEventArgs e)
@@ -130,6 +136,12 @@ namespace VocabularyTrainer
         {
             Config.Save();
             VocabularyDatabase.Save();
+        }
+
+        private void contextRemove_Click(object sender, RoutedEventArgs e)
+        {
+            Vocabulary voc = (Vocabulary)dataGrid.SelectedItem;
+            VocabularyDatabase.Instance.vocs.Remove(voc);
         }
     }
 }
