@@ -17,8 +17,8 @@
             <local:PercentageConverter x:Key="PercentageConverter"></local:PercentageConverter>
         </ResourceDictionary>
     </Window.Resources>
-    
-    
+
+
     <Controls:MetroWindow.Flyouts>
         <Controls:FlyoutsControl Margin="0,30,0,0">
             <Controls:Flyout x:Name="FlyoutAddVocabulary" Position="Top" Header="Add"
@@ -71,9 +71,19 @@
         </Controls:WindowCommands>
     </Controls:MetroWindow.RightWindowCommands>
 
-    
-        <Grid>
-        <DataGrid x:Name="dataGrid" AutoGenerateColumns="False" ItemsSource="{Binding}" CanUserAddRows="False"  AlternationCount="2" CanUserDeleteRows="False" SelectionUnit="FullRow" SelectionMode="Single">        
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30*"></RowDefinition>
+            <RowDefinition Height="70*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <GroupBox Header="Filter" Grid.Row="0">
+            <Grid>
+                <Label Content="Suchen" HorizontalAlignment="Left" Margin="21,10,0,0" VerticalAlignment="Top" Width="67"/>
+                <TextBox HorizontalAlignment="Left" Height="23" Margin="88,11,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+            </Grid>
+        </GroupBox>
+        <DataGrid x:Name="dataGrid" AutoGenerateColumns="False" ItemsSource="{Binding}" CanUserAddRows="False"  AlternationCount="2" CanUserDeleteRows="False" SelectionUnit="FullRow" SelectionMode="Single" Grid.Row="1">
             <DataGrid.RowStyle>
                 <Style TargetType="{x:Type DataGridRow}">
                     <Style.Triggers>
@@ -114,6 +124,5 @@
                 </ContextMenu>
             </DataGrid.ContextMenu>
         </DataGrid>
-
     </Grid>
 </Controls:MetroWindow>

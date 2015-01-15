@@ -57,6 +57,7 @@ namespace VocabularyTrainer
 
            // Itemlist.Filter = new Predicate<object>( item => ((Vocabulary)item).lection.Equals("11"));
 
+
             dataGrid.ItemsSource = Itemlist;
         }
 
