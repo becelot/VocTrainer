@@ -568,5 +568,54 @@
       <cat>Nomen</cat>
       <lection>Andere</lection>
     </Vocabulary>
+    <Vocabulary>
+      <german>Liebesgeschichte</german>
+      <japanese>れない</japanese>
+      <romaji>ren'ai</romaji>
+      <cat>Nomen</cat>
+      <lection>11</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Klassik</german>
+      <japanese>クラシック</japanese>
+      <romaji>kurasikku</romaji>
+      <cat>Nomen</cat>
+      <lection>11</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Action</german>
+      <japanese>アクシオン</japanese>
+      <romaji>akushion</romaji>
+      <cat>Nomen</cat>
+      <lection>11</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Baseball</german>
+      <japanese>やきゅう</japanese>
+      <romaji>yakyuu</romaji>
+      <cat>Nomen</cat>
+      <lection>11</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Judo</german>
+      <japanese>じゅうどう</japanese>
+      <romaji>juudoo</romaji>
+      <cat>Nomen</cat>
+      <lection>11</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Hobby</german>
+      <japanese>しゅみ</japanese>
+      <romaji>shumi</romaji>
+      <cat>Nomen</cat>
+      <lection>11</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Welches</german>
+      <japanese>どんあ</japanese>
+      <romaji>donna</romaji>
+      <cat>Fragewörter</cat>
+      <lection>11</lection>
+    </Vocabulary>
   </Database>
 </VocabularyDatabase>
