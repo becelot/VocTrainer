@@ -18,6 +18,7 @@ using System.Runtime.InteropServices;
 using System.Collections.ObjectModel;
 using System.Windows.Forms;
 using System.ComponentModel;
+using System.Collections;
 
 namespace VocabularyTrainer
 {
@@ -26,6 +27,8 @@ namespace VocabularyTrainer
     /// </summary>
     public partial class MainWindow : MetroWindow
     {
+        private ICollectionView view;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -54,12 +57,28 @@ namespace VocabularyTrainer
             ObservableCollection<Vocabulary> custdata = VocabularyDatabase.Instance.vocs;
 
             var itemSourceView = new CollectionViewSource() { Source = VocabularyDatabase.Instance.vocs };
-            ICollectionView Itemlist = itemSourceView.View;
+            view = itemSourceView.View;
 
-           // Itemlist.Filter = new Predicate<object>( item => ((Vocabulary)item).lection.Equals("11"));
+            view.Filter = new Predicate<object>( 
+                                item => 
+                                {
+                                    if (!this.searchText.Text.Equals(""))
+                                    {
+                                        Vocabulary voc = (Vocabulary)item;
+                                        if (voc.german.Contains(this.searchText.Text) || voc.japanese.Contains(this.searchText.Text) || voc.romaji.Contains(this.searchText.Text))
+                                        {
+                                            return true;
+                                        }
+                                        else
+                                        {
+                                            return false;
+                                        }
+                                    }
+                                    return true; 
+                                }
+            );
 
-
-            dataGrid.ItemsSource = Itemlist;
+            dataGrid.ItemsSource = view;
         }
 
         private void ButtonSettings_Click(object sender, RoutedEventArgs e)
@@ -148,6 +167,16 @@ namespace VocabularyTrainer
         {
             Vocabulary voc = (Vocabulary)dataGrid.SelectedItem;
             VocabularyDatabase.Instance.vocs.Remove(voc);
+        }
+
+        private void searchText_TextInput(object sender, TextCompositionEventArgs e)
+        {
+
+        }
+
+        private void searchText_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            view.Refresh();
         }
     }
 }

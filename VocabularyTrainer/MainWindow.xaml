@@ -81,7 +81,7 @@
         <GroupBox Header="Filter" Grid.Row="0">
             <Grid>
                 <Label Content="Suchen" HorizontalAlignment="Left" Margin="21,10,0,0" VerticalAlignment="Top" Width="67"/>
-                <TextBox HorizontalAlignment="Left" Height="23" Margin="88,11,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+                <TextBox HorizontalAlignment="Left" Height="23" Margin="88,11,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="searchText" TextInput="searchText_TextInput" TextChanged="searchText_TextChanged"/>
                 <xctk:CheckListBox Margin="293,10,10,24" Name="lectionCeckBox"></xctk:CheckListBox>
             </Grid>
         </GroupBox>
