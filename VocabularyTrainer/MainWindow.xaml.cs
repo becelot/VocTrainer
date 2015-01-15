@@ -67,7 +67,11 @@ namespace VocabularyTrainer
 
         private void ButtonAddVoc_Click(object sender, RoutedEventArgs e)
         {
+            //FlyoutAddVocabulary.Height = 0.2* this.ActualHeight;
             FlyoutAddVocabulary.IsOpen = true;
+            //Logger.WriteLine(this.ActualHeight.ToString(), "ActualHeight");
+            //Logger.WriteLine(this.FlyoutAddVocabulary.Height.ToString(), "Flyout Height");
+            
         }
 
         internal class WindowAspectRatio

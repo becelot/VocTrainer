@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,6 +15,12 @@ namespace VocabularyTrainer
             object parameter,
             System.Globalization.CultureInfo culture)
         {
+            double val;
+            if (!double.TryParse(parameter.ToString(), System.Globalization.NumberStyles.Float, new CultureInfo("de-DE"), out val))
+            {
+                return System.Convert.ToDouble(value) *
+                   System.Convert.ToDouble(parameter.ToString().Replace(".", ","));
+            }
             return System.Convert.ToDouble(value) *
                    System.Convert.ToDouble(parameter);
         }
