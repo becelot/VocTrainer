@@ -547,5 +547,26 @@
       <cat>Verben</cat>
       <lection>10</lection>
     </Vocabulary>
+    <Vocabulary>
+      <german>Regen</german>
+      <japanese>あめ</japanese>
+      <romaji>ame</romaji>
+      <cat>Nomen</cat>
+      <lection>Andere</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Wind</german>
+      <japanese>かぜ</japanese>
+      <romaji>kaze</romaji>
+      <cat>Nomen</cat>
+      <lection>Andere</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Wetter</german>
+      <japanese>てんき</japanese>
+      <romaji>tenki</romaji>
+      <cat>Nomen</cat>
+      <lection>Andere</lection>
+    </Vocabulary>
   </Database>
 </VocabularyDatabase>
