@@ -15,14 +15,13 @@ namespace VocabularyTrainer
             object parameter,
             System.Globalization.CultureInfo culture)
         {
-            double val;
-            if (!double.TryParse(parameter.ToString(), System.Globalization.NumberStyles.Float, new CultureInfo("de-DE"), out val))
+            /*if (!double.TryParse(parameter.ToString(), System.Globalization.NumberStyles.Float, new CultureInfo("de-DE"), out val))
             {
                 return System.Convert.ToDouble(value) *
                    System.Convert.ToDouble(parameter.ToString().Replace(".", ","));
-            }
+            }*/
             return System.Convert.ToDouble(value) *
-                   System.Convert.ToDouble(parameter);
+                   System.Convert.ToDouble(parameter, CultureInfo.InvariantCulture);
         }
 
         public object ConvertBack(object value,
