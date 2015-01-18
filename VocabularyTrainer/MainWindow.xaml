@@ -75,16 +75,24 @@
 
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="30*"></RowDefinition>
-            <RowDefinition Height="70*"></RowDefinition>
+            <RowDefinition Height="32*"></RowDefinition>
+            <RowDefinition Height="557*"/>
         </Grid.RowDefinitions>
-        <GroupBox Header="Filter" Grid.Row="0">
-            <Grid>
-                <Label Content="Suchen" HorizontalAlignment="Left" Margin="21,10,0,0" VerticalAlignment="Top" Width="67"/>
-                <TextBox HorizontalAlignment="Left" Height="23" Margin="88,11,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="searchText" TextInput="searchText_TextInput" TextChanged="searchText_TextChanged"/>
-                <xctk:CheckListBox Margin="293,10,10,24" Name="lectionCeckBox"></xctk:CheckListBox>
-            </Grid>
-        </GroupBox>
+        <Menu Grid.Row="0">
+            <MenuItem Header="_FILTER">
+                <TextBox Text="" Name="searchText" TextChanged="searchText_TextChanged"></TextBox>
+                <MenuItem Header="_Lektion" Name="menuLektionen"></MenuItem>
+                <MenuItem Header="_Kategorie" Name="menuKategorie"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="_ABFRAGE" Name="menuQuery">
+                <RadioButton Content="Romaji -> Deutsch" Name="romajiToGerman"></RadioButton>
+                <RadioButton Content="Japanisch -> Deutsch" IsChecked="True" Name="japaneseToGerman"></RadioButton>
+                <RadioButton Content="Deutsch -> Romaji" Name="germanToRomaji"></RadioButton>
+                <RadioButton Content="Deutsch -> Japanisch" Name="germanToJapanese"></RadioButton>
+                <Separator></Separator>
+                <MenuItem Header="Abfrage starten" Click="MenuItem_Click"></MenuItem>
+            </MenuItem>
+        </Menu>
         <DataGrid x:Name="dataGrid" AutoGenerateColumns="False" ItemsSource="{Binding}" CanUserAddRows="False"  AlternationCount="2" CanUserDeleteRows="False" SelectionUnit="FullRow" SelectionMode="Single" Grid.Row="1">
             <DataGrid.RowStyle>
                 <Style TargetType="{x:Type DataGridRow}">

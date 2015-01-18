@@ -1,24 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using MahApps.Metro.Controls;
 using System.Windows.Interop;
 using System.Runtime.InteropServices;
 using System.Collections.ObjectModel;
-using System.Windows.Forms;
 using System.ComponentModel;
-using System.Collections;
 
 namespace VocabularyTrainer
 {
@@ -45,13 +36,22 @@ namespace VocabularyTrainer
             {
                 AddVocabulary.comboCategory.Items.Add(s);
                 Options.comboCategory.Items.Add(s);
-                lectionCeckBox.Items.Add(s);
+                System.Windows.Controls.CheckBox cc = new System.Windows.Controls.CheckBox();
+                cc.Checked += (o, e) => { view.Refresh(); };
+                cc.Unchecked += (o, e) => { view.Refresh(); };
+                cc.Content = s;
+                menuKategorie.Items.Add(cc);
             }
 
             foreach (string s in Config.Instance.lections)
             {
                 AddVocabulary.comboLection.Items.Add(s);
                 Options.comboLection.Items.Add(s);
+                System.Windows.Controls.CheckBox cc = new System.Windows.Controls.CheckBox();
+                cc.Checked += (o, e) => { view.Refresh(); };
+                cc.Unchecked += (o, e) => { view.Refresh(); };
+                cc.Content = s;
+                menuLektionen.Items.Add(cc);
             }
 
             ObservableCollection<Vocabulary> custdata = VocabularyDatabase.Instance.vocs;
@@ -60,11 +60,12 @@ namespace VocabularyTrainer
             view = itemSourceView.View;
 
             view.Filter = new Predicate<object>( 
-                                item => 
+                            item => 
                                 {
+                                    Vocabulary voc = (Vocabulary)item;
                                     if (!this.searchText.Text.Equals(""))
                                     {
-                                        Vocabulary voc = (Vocabulary)item;
+                                        
                                         if (voc.german.Contains(this.searchText.Text) || voc.japanese.Contains(this.searchText.Text) || voc.romaji.Contains(this.searchText.Text))
                                         {
                                             return true;
@@ -74,11 +75,39 @@ namespace VocabularyTrainer
                                             return false;
                                         }
                                     }
-                                    return true; 
+
+                                    Predicate<object> stdPred = new Predicate<object>(x => { return true; });
+
+                                    menuLektionen.Items.Filter = new Predicate<object>(x => { return ((System.Windows.Controls.CheckBox)x).IsChecked.Value; });
+                                    menuKategorie.Items.Filter = new Predicate<object>(x => { return ((System.Windows.Controls.CheckBox)x).IsChecked.Value; });
+
+                                    List<string> cLektionen = new List<string>();
+                                    foreach (System.Windows.Controls.CheckBox c in menuLektionen.Items)
+                                        cLektionen.Add(c.Content.ToString());
+                                    List<string> cKategorien = new List<string>();
+                                    foreach (System.Windows.Controls.CheckBox c in menuKategorie.Items)
+                                        cKategorien.Add(c.Content.ToString());
+
+                                    menuLektionen.Items.Filter = stdPred;
+                                    menuKategorie.Items.Filter = stdPred;
+
+                                    //Filter sind aktiv
+                                    if ( (cLektionen.Count == 0 || cLektionen.Contains(voc.lection, null) ) && 
+                                            (cKategorien.Count == 0 || cKategorien.Contains(voc.cat)) )
+                                    {
+                                        return true;
+                                    }
+
+                                    //Fällt in keine Kategorie oder Lektion
+                                    return false;
                                 }
             );
-
             dataGrid.ItemsSource = view;
+        }
+
+        void cc_Checked(object sender, RoutedEventArgs e)
+        {
+            view.Refresh();
         }
 
         private void ButtonSettings_Click(object sender, RoutedEventArgs e)
@@ -169,14 +198,47 @@ namespace VocabularyTrainer
             VocabularyDatabase.Instance.vocs.Remove(voc);
         }
 
-        private void searchText_TextInput(object sender, TextCompositionEventArgs e)
-        {
-
-        }
-
         private void searchText_TextChanged(object sender, TextChangedEventArgs e)
         {
             view.Refresh();
+        }
+
+        private void lectionCeckBox_ItemSelectionChanged(object sender, Xceed.Wpf.Toolkit.Primitives.ItemSelectionChangedEventArgs e)
+        {
+            view.Refresh();
+        }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            List<Vocabulary> vocList = new List<Vocabulary>();
+            foreach (Vocabulary voc in view)
+            {
+                vocList.Add(voc);
+            }
+
+            // TODO: Permutate list
+            Dictionary<string, string> dicVoc = new Dictionary<string, string>();
+
+            // Build dictionary
+            foreach (Vocabulary voc in vocList)
+            {
+                if (germanToRomaji.IsChecked.Value)
+                {
+                    dicVoc.Add(voc.german, voc.romaji);
+                }
+                else if (germanToJapanese.IsChecked.Value)
+                {
+                    dicVoc.Add(voc.german, voc.japanese);
+                }
+                else if (japaneseToGerman.IsChecked.Value)
+                {
+                    dicVoc.Add(voc.japanese, voc.german);
+                }
+                else if (romajiToGerman.IsChecked.Value)
+                {
+                    dicVoc.Add(voc.romaji, voc.german);
+                }
+            }
         }
     }
 }
