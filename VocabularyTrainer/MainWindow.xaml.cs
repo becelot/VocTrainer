@@ -242,6 +242,8 @@ namespace VocabularyTrainer
                     dicVoc.Add(voc.romaji, voc.german);
                 }
             }
+
+            this.FlyoutCheckVocabulary.IsOpen = true;
         }
     }
 }

@@ -98,6 +98,9 @@
     <Compile Include="Flyouts\AddVocabulary.xaml.cs">
       <DependentUpon>AddVocabulary.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Flyouts\CheckVocabulary.xaml.cs">
+      <DependentUpon>CheckVocabulary.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Flyouts\Options.xaml.cs">
       <DependentUpon>Options.xaml</DependentUpon>
     </Compile>
@@ -106,6 +109,10 @@
     <Compile Include="Utility\PercentageConverter.cs" />
     <Compile Include="Utility\XmlManager.cs" />
     <Page Include="Flyouts\AddVocabulary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Flyouts\CheckVocabulary.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

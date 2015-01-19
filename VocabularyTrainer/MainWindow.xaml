@@ -34,6 +34,12 @@
                              Theme="Dark">
                 <flyout:Options x:Name="Options"></flyout:Options>
             </Controls:Flyout>
+            <Controls:Flyout x:Name="FlyoutCheckVocabulary" Position="Left" Header="Vokabeln abfragen"
+                            Width="{Binding ActualWidth, Converter={StaticResource PercentageConverter}, ConverterParameter=1, RelativeSource={RelativeSource AncestorType=local:MainWindow}}"
+                             Height="{Binding ActualHeight, Converter={StaticResource PercentageConverter}, ConverterParameter=1, RelativeSource={RelativeSource AncestorType=local:MainWindow}}"
+                             Theme="Dark" CloseButtonVisibility="Hidden">
+                <flyout:CheckVocabulary x:Name="checkVocabulary"></flyout:CheckVocabulary>
+            </Controls:Flyout>
         </Controls:FlyoutsControl>
     </Controls:MetroWindow.Flyouts>
 
