@@ -73,6 +73,7 @@ namespace VocabularyTrainer.Flyouts
                 Transistor.Content = this.gridRef;
                 Helper.MainWindow.FlyoutCheckVocabulary.CloseButtonVisibility = Visibility.Hidden;
                 solutions.Clear();
+                index = 0;
             }
         }
 
