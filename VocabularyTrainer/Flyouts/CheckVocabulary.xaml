@@ -7,7 +7,35 @@
              mc:Ignorable="d"
              d:DesignHeight="620" d:DesignWidth="550">
     <Grid>
-        <Controls:TransitioningContentControl Transition="Down" Name="Transistor">
+        <Controls:TransitioningContentControl Transition="Custom" Name="Transistor" CustomVisualStatesName="FirstCustomTransition">
+            <Controls:TransitioningContentControl.CustomVisualStates>
+                <VisualState x:Name="FirstCustomTransition">
+                    <Storyboard>
+                        <DoubleAnimationUsingKeyFrames BeginTime="00:00:00"
+                                                       Storyboard.TargetName="CurrentContentPresentationSite"
+                                                       Storyboard.TargetProperty="(UIElement.Opacity)">
+                            <SplineDoubleKeyFrame KeyTime="00:00:00"
+                                                  Value="0" />
+                            <SplineDoubleKeyFrame KeyTime="00:00:01.5"
+                                                  Value="0" />
+                            <EasingDoubleKeyFrame KeyTime="00:00:05"
+                                                  Value="1">
+                                <EasingDoubleKeyFrame.EasingFunction>
+                                    <SineEase />
+                                </EasingDoubleKeyFrame.EasingFunction>
+                            </EasingDoubleKeyFrame>
+                        </DoubleAnimationUsingKeyFrames>
+                        <DoubleAnimationUsingKeyFrames BeginTime="00:00:00"
+                                                       Storyboard.TargetName="PreviousContentPresentationSite"
+                                                       Storyboard.TargetProperty="(UIElement.Opacity)">
+                            <SplineDoubleKeyFrame KeyTime="00:00:00"
+                                                  Value="1" />
+                            <SplineDoubleKeyFrame KeyTime="00:00:01.5"
+                                                  Value="0" />
+                        </DoubleAnimationUsingKeyFrames>
+                    </Storyboard>
+                </VisualState>
+            </Controls:TransitioningContentControl.CustomVisualStates>
             <Grid Name="stdGrid">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="66*"/>
