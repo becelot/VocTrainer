@@ -248,5 +248,10 @@ namespace VocabularyTrainer
             this.checkVocabulary.labelCheck.Content = dicVoc.Keys.ToList()[0];
             this.FlyoutCheckVocabulary.IsOpen = true;
         }
+
+        private void FlyoutCheckVocabulary_IsOpenChanged(object sender, RoutedEventArgs e)
+        {
+            this.checkVocabulary.onCheckVocabularyOpen(this.FlyoutCheckVocabulary.IsOpen);
+        }
     }
 }

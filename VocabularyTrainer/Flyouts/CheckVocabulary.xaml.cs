@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,19 +22,44 @@ namespace VocabularyTrainer.Flyouts
     public partial class CheckVocabulary : UserControl
     {
         public Dictionary<string, string> actualDictionary { get; set; }
-        public Dictionary<string, string> answers { get; set; }
+
+        private Grid gridRef;
+
+        private DataGrid evaluationGrid;
+
+        protected class EvaluationEntry
+        {
+            public string Vocabulary { get; set; }
+            public string Solution { get; set; }
+            public string Entered { get; set; }
+            public bool Correct { get; set; }
+        }
+
+        private ObservableCollection<EvaluationEntry> solutions;
 
         private int index = 0;
 
         public CheckVocabulary()
         {
             InitializeComponent();
-            answers = new Dictionary<string, string>();
+            solutions = new ObservableCollection<EvaluationEntry>();
+            gridRef = stdGrid;
+            evaluationGrid = new DataGrid() { AutoGenerateColumns=false, ItemsSource=solutions, CanUserAddRows=false };
+            evaluationGrid.Columns.Add(new DataGridTextColumn() { Header = "Vokabel", Width=new DataGridLength(1,DataGridLengthUnitType.Star), Binding=new Binding("Vocabulary") });
+            evaluationGrid.Columns.Add(new DataGridTextColumn() { Header = "Lösung", Width = new DataGridLength(1, DataGridLengthUnitType.Star), Binding = new Binding("Solution") });
+            evaluationGrid.Columns.Add(new DataGridTextColumn() { Header = "Eingabe", Width = new DataGridLength(1, DataGridLengthUnitType.Star), Binding=new Binding("Entered") });
+            evaluationGrid.Columns.Add(new DataGridCheckBoxColumn() { Header = "Korrekt?", Width = new DataGridLength(1, DataGridLengthUnitType.Star), Binding =new Binding("Correct") });
         }
 
         private void nextVocabulary_Click(object sender, RoutedEventArgs e)
         {
-            answers.Add(labelCheck.Content.ToString(), answerBox.Text);
+            solutions.Add(new EvaluationEntry() {
+                Vocabulary = labelCheck.Content.ToString(),
+                Solution =actualDictionary[labelCheck.Content.ToString()],
+                Entered =answerBox.Text,
+                Correct =(actualDictionary[labelCheck.Content.ToString()].Equals(answerBox.Text))
+            });
+
             index++;
             if (index < actualDictionary.Keys.Count)
             {
@@ -43,7 +69,18 @@ namespace VocabularyTrainer.Flyouts
             }
             else // Auswerten
             {
-                Helper.MainWindow.FlyoutCheckVocabulary.IsOpen = false;
+                Helper.MainWindow.FlyoutCheckVocabulary.CloseButtonVisibility = Visibility.Visible;
+                Transistor.Content = evaluationGrid;
+            }
+        }
+
+        public void onCheckVocabularyOpen(bool mode)
+        {
+            if (mode)
+            {
+                Transistor.Content = this.gridRef;
+                Helper.MainWindow.FlyoutCheckVocabulary.CloseButtonVisibility = Visibility.Hidden;
+                solutions.Clear();
             }
         }
 

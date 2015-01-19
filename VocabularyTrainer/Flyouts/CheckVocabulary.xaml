@@ -2,34 +2,37 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
              mc:Ignorable="d"
              d:DesignHeight="620" d:DesignWidth="550">
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="66*"/>
-            <RowDefinition Height="75*"/>
-            <RowDefinition Height="27*"/>
-            <RowDefinition Height="75*"/>
-            <RowDefinition Height="23*"/>
-            <RowDefinition Height="75*"/>
-            <RowDefinition Height="304*"/>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="39*"/>
-            <ColumnDefinition Width="202*"/>
-            <ColumnDefinition Width="39*"/>
-        </Grid.ColumnDefinitions>
-        <Viewbox Grid.Column="1" Grid.Row="1">
-            <Label Content="Test" Name="labelCheck"></Label>
-        </Viewbox>
-        <Viewbox Grid.Column="1" Grid.Row="3">
-            <TextBox Text="Test" Name="answerBox" MinWidth="100" TextAlignment="Center" KeyDown="answerBox_KeyDown"></TextBox>
-        </Viewbox>
-        <Viewbox Grid.Column="1" Grid.Row="5">
-            <Button Name="nextVocabulary" Click="nextVocabulary_Click" Content="Nächste Vokabel" MinWidth="202" Style="{StaticResource AccentedSquareButtonStyle}" />
-        </Viewbox>
-
-
+        <Controls:TransitioningContentControl Transition="Down" Name="Transistor">
+            <Grid Name="stdGrid">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="66*"/>
+                    <RowDefinition Height="75*"/>
+                    <RowDefinition Height="27*"/>
+                    <RowDefinition Height="75*"/>
+                    <RowDefinition Height="23*"/>
+                    <RowDefinition Height="75*"/>
+                    <RowDefinition Height="304*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="39*"/>
+                    <ColumnDefinition Width="202*"/>
+                    <ColumnDefinition Width="39*"/>
+                </Grid.ColumnDefinitions>
+                <Viewbox Grid.Column="1" Grid.Row="1">
+                    <Label Content="Test" Name="labelCheck"></Label>
+                </Viewbox>
+                <Viewbox Grid.Column="1" Grid.Row="3">
+                    <TextBox Text="Test" Name="answerBox" MinWidth="100" TextAlignment="Center" KeyDown="answerBox_KeyDown"></TextBox>
+                </Viewbox>
+                <Viewbox Grid.Column="1" Grid.Row="5">
+                    <Button Name="nextVocabulary" Click="nextVocabulary_Click" Content="Nächste Vokabel" MinWidth="202" Style="{StaticResource AccentedSquareButtonStyle}" />
+                </Viewbox>
+            </Grid>
+        </Controls:TransitioningContentControl>
     </Grid>
 </UserControl>
