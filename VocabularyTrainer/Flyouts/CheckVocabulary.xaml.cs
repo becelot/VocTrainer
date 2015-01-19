@@ -20,9 +20,39 @@ namespace VocabularyTrainer.Flyouts
     /// </summary>
     public partial class CheckVocabulary : UserControl
     {
+        public Dictionary<string, string> actualDictionary { get; set; }
+        public Dictionary<string, string> answers { get; set; }
+
+        private int index = 0;
+
         public CheckVocabulary()
         {
             InitializeComponent();
+            answers = new Dictionary<string, string>();
+        }
+
+        private void nextVocabulary_Click(object sender, RoutedEventArgs e)
+        {
+            answers.Add(labelCheck.Content.ToString(), answerBox.Text);
+            index++;
+            if (index < actualDictionary.Keys.Count)
+            {
+                answerBox.Text = "";
+                answerBox.Focus();
+                labelCheck.Content = actualDictionary.Keys.ToList()[index];
+            }
+            else // Auswerten
+            {
+                Helper.MainWindow.FlyoutCheckVocabulary.IsOpen = false;
+            }
+        }
+
+        private void answerBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Return)
+            {
+                this.nextVocabulary_Click(sender, null);
+            }
         }
     }
 }

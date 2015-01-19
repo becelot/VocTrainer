@@ -7,11 +7,13 @@
              d:DesignHeight="620" d:DesignWidth="550">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="67*"/>
-            <RowDefinition Height="76*"/>
+            <RowDefinition Height="66*"/>
+            <RowDefinition Height="75*"/>
             <RowDefinition Height="27*"/>
-            <RowDefinition Height="76*"/>
-            <RowDefinition Height="381*"/>
+            <RowDefinition Height="75*"/>
+            <RowDefinition Height="23*"/>
+            <RowDefinition Height="75*"/>
+            <RowDefinition Height="304*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="39*"/>
@@ -19,11 +21,15 @@
             <ColumnDefinition Width="39*"/>
         </Grid.ColumnDefinitions>
         <Viewbox Grid.Column="1" Grid.Row="1">
-            <Label Content="Test"></Label>
+            <Label Content="Test" Name="labelCheck"></Label>
         </Viewbox>
         <Viewbox Grid.Column="1" Grid.Row="3">
-            <TextBox Text="Test"></TextBox>
+            <TextBox Text="Test" Name="answerBox" MinWidth="100" TextAlignment="Center" KeyDown="answerBox_KeyDown"></TextBox>
         </Viewbox>
+        <Viewbox Grid.Column="1" Grid.Row="5">
+            <Button Name="nextVocabulary" Click="nextVocabulary_Click" Content="Nächste Vokabel" MinWidth="202" Style="{StaticResource AccentedSquareButtonStyle}" />
+        </Viewbox>
+
 
     </Grid>
 </UserControl>

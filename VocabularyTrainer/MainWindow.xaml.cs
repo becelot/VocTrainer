@@ -243,6 +243,9 @@ namespace VocabularyTrainer
                 }
             }
 
+            this.checkVocabulary.actualDictionary = dicVoc;
+            this.checkVocabulary.answerBox.Text = "";
+            this.checkVocabulary.labelCheck.Content = dicVoc.Keys.ToList()[0];
             this.FlyoutCheckVocabulary.IsOpen = true;
         }
     }
