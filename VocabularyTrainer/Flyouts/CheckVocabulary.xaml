@@ -24,13 +24,13 @@
                     <ColumnDefinition Width="39*"/>
                 </Grid.ColumnDefinitions>
                 <Viewbox Grid.Column="1" Grid.Row="1">
-                    <Label Content="Test" Name="labelCheck"></Label>
+                    <Label Content="Test" Name="labelCheck" FontSize="42.667"></Label>
                 </Viewbox>
                 <Viewbox Grid.Column="1" Grid.Row="3">
-                    <TextBox Text="Test" Name="answerBox" MinWidth="100" TextAlignment="Center" KeyDown="answerBox_KeyDown"></TextBox>
+                    <TextBox Text="Test" Name="answerBox" MinWidth="302" TextAlignment="Center" KeyDown="answerBox_KeyDown" FontSize="42.667"></TextBox>
                 </Viewbox>
                 <Viewbox Grid.Column="1" Grid.Row="5">
-                    <Button Name="nextVocabulary" Click="nextVocabulary_Click" Content="Nächste Vokabel" MinWidth="202" Style="{StaticResource AccentedSquareButtonStyle}" />
+                    <Button Name="nextVocabulary" Click="nextVocabulary_Click" Content="Nächste Vokabel" MinWidth="342" Style="{StaticResource AccentedSquareButtonStyle}" FontSize="42.667" />
                 </Viewbox>
             </Grid>
         </Controls:TransitioningContentControl>
