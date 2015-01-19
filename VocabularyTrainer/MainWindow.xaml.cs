@@ -10,6 +10,7 @@ using System.Windows.Interop;
 using System.Runtime.InteropServices;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using MahApps.Metro.Controls.Dialogs;
 
 namespace VocabularyTrainer
 {
@@ -215,6 +216,12 @@ namespace VocabularyTrainer
             foreach (Vocabulary voc in view)
             {
                 vocList.Add(voc);
+            }
+
+            if (vocList.Count == 0)
+            {
+                this.ShowMessageAsync("Fehler", "Es wurden keine Vokabeln ausgewählt.");
+                return;
             }
 
 
