@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace VocabularyTrainer
 {
-    class Helper
+    public static class Helper
     {
 
         public static MainWindow MainWindow { get; set; }
@@ -64,6 +64,25 @@ namespace VocabularyTrainer
         public static void SetInputLanguage(InputLanguage lang)
         {
             InputLanguage.CurrentInputLanguage = lang;
+        }
+
+        // Basic implementation of Fisher-Yates shuffle
+        public static IEnumerable<T> Shuffle<T>(this IEnumerable<T> source, Random rng = null)
+        {
+            //Create new random variable
+            if (rng == null)
+            {
+                rng = new Random();
+            }
+
+            //Fisher-Yates algorithm
+            T[] elements = source.ToArray();
+            for (int i = elements.Length - 1; i >= 0; i--)
+            {
+                int swapIndex = rng.Next(i + 1);
+                yield return elements[swapIndex];
+                elements[swapIndex] = elements[i];
+            }
         }
     }
 }

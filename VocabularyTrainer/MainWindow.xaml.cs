@@ -210,16 +210,19 @@ namespace VocabularyTrainer
 
         private void MenuItem_Click(object sender, RoutedEventArgs e)
         {
+            //Extract content from view
             List<Vocabulary> vocList = new List<Vocabulary>();
             foreach (Vocabulary voc in view)
             {
                 vocList.Add(voc);
             }
 
-            // TODO: Permutate list
-            Dictionary<string, string> dicVoc = new Dictionary<string, string>();
+
+            //Permute list
+            vocList = Helper.Shuffle<Vocabulary>(vocList).ToList();
 
             // Build dictionary
+            Dictionary<string, string> dicVoc = new Dictionary<string, string>();
             foreach (Vocabulary voc in vocList)
             {
                 if (germanToRomaji.IsChecked.Value)
