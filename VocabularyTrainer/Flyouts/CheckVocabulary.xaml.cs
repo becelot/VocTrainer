@@ -36,7 +36,7 @@ namespace VocabularyTrainer.Flyouts
             InitializeComponent();
             solutions = new ObservableCollection<EvaluationEntry>();
             gridRef = stdGrid;
-            evaluationGrid = new DataGrid() { AutoGenerateColumns=false, ItemsSource=solutions, CanUserAddRows=false };
+            evaluationGrid = new DataGrid() { AutoGenerateColumns=false, ItemsSource=solutions, CanUserAddRows=false, AlternationCount=2 };
             evaluationGrid.Columns.Add(new DataGridTextColumn() { Header = "Vokabel", Width=new DataGridLength(1,DataGridLengthUnitType.Star), Binding=new Binding("Vocabulary"), IsReadOnly = true });
             evaluationGrid.Columns.Add(new DataGridTextColumn() { Header = "Lösung", Width = new DataGridLength(1, DataGridLengthUnitType.Star), Binding = new Binding("Solution"), IsReadOnly = true });
             evaluationGrid.Columns.Add(new DataGridTextColumn() { Header = "Eingabe", Width = new DataGridLength(1, DataGridLengthUnitType.Star), Binding=new Binding("Entered"), IsReadOnly = true });
