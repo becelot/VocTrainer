@@ -570,7 +570,7 @@
     </Vocabulary>
     <Vocabulary>
       <german>Liebesgeschichte</german>
-      <japanese>れない</japanese>
+      <japanese>れんあい</japanese>
       <romaji>ren'ai</romaji>
       <cat>Nomen</cat>
       <lection>11</lection>
@@ -584,7 +584,7 @@
     </Vocabulary>
     <Vocabulary>
       <german>Action</german>
-      <japanese>アクシオン</japanese>
+      <japanese>アクション</japanese>
       <romaji>akushion</romaji>
       <cat>Nomen</cat>
       <lection>11</lection>
@@ -646,7 +646,7 @@
       <lection>11</lection>
     </Vocabulary>
     <Vocabulary>
-      <german>Erster Tag im Monat</german>
+      <german>Erster im Monat</german>
       <japanese>ついたち</japanese>
       <romaji>tsuitachi</romaji>
       <cat>Zeitwörter</cat>
@@ -714,6 +714,13 @@
       <romaji>tooka</romaji>
       <cat>Zeitwörter</cat>
       <lection>11</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>wann</german>
+      <japanese>いつ</japanese>
+      <romaji>itsu</romaji>
+      <cat>Fragewörter</cat>
+      <lection>10</lection>
     </Vocabulary>
   </Database>
 </VocabularyDatabase>
