@@ -59,28 +59,28 @@
     </Vocabulary>
     <Vocabulary>
       <german>sehen</german>
-      <japanese>みます</japanese>
+      <japanese>見ます</japanese>
       <romaji>mimasu</romaji>
       <cat>Verben</cat>
       <lection>9</lection>
     </Vocabulary>
     <Vocabulary>
       <german>hören</german>
-      <japanese>ききます</japanese>
+      <japanese>聞きます</japanese>
       <romaji>kikimasu</romaji>
       <cat>Verben</cat>
       <lection>9</lection>
     </Vocabulary>
     <Vocabulary>
       <german>lesen</german>
-      <japanese>よみます</japanese>
+      <japanese>読みます</japanese>
       <romaji>yomimasu</romaji>
       <cat>Verben</cat>
       <lection>9</lection>
     </Vocabulary>
     <Vocabulary>
       <german>schreiben</german>
-      <japanese>かきます</japanese>
+      <japanese>書きます</japanese>
       <romaji>kakimasu</romaji>
       <cat>Verben</cat>
       <lection>9</lection>
@@ -615,6 +615,104 @@
       <japanese>どんあ</japanese>
       <romaji>donna</romaji>
       <cat>Fragewörter</cat>
+      <lection>11</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>sprechen</german>
+      <japanese>話します</japanese>
+      <romaji>hanachimasu</romaji>
+      <cat>Verben</cat>
+      <lection>11</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>sagen</german>
+      <japanese>言います</japanese>
+      <romaji>iimasu</romaji>
+      <cat>Verben</cat>
+      <lection>11</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>~ Monat</german>
+      <japanese>月</japanese>
+      <romaji>gatsu</romaji>
+      <cat>Zeitwörter</cat>
+      <lection>11</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>~ Tag</german>
+      <japanese>日</japanese>
+      <romaji>nichi</romaji>
+      <cat>Zeitwörter</cat>
+      <lection>11</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Erster Tag im Monat</german>
+      <japanese>ついたち</japanese>
+      <romaji>tsuitachi</romaji>
+      <cat>Zeitwörter</cat>
+      <lection>11</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Zweiter im Monat</german>
+      <japanese>ふつか</japanese>
+      <romaji>futsuka</romaji>
+      <cat>Zeitwörter</cat>
+      <lection>11</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Dritter im Monat</german>
+      <japanese>みっか</japanese>
+      <romaji>mikka</romaji>
+      <cat>Zeitwörter</cat>
+      <lection>11</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Vierter im Monat</german>
+      <japanese>よっか</japanese>
+      <romaji>yokka</romaji>
+      <cat>Zeitwörter</cat>
+      <lection>11</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Fünfter im Monat</german>
+      <japanese>いつか</japanese>
+      <romaji>itsuka</romaji>
+      <cat>Zeitwörter</cat>
+      <lection>11</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Sechster im Monat</german>
+      <japanese>むいか</japanese>
+      <romaji>muika</romaji>
+      <cat>Zeitwörter</cat>
+      <lection>11</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Siebter im Monat</german>
+      <japanese>なのか</japanese>
+      <romaji>nanoka</romaji>
+      <cat>Zeitwörter</cat>
+      <lection>11</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Achter im Monat</german>
+      <japanese>ようか</japanese>
+      <romaji>yooka</romaji>
+      <cat>Zeitwörter</cat>
+      <lection>11</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Neunter im Monat</german>
+      <japanese>ここのか</japanese>
+      <romaji>kokonoka</romaji>
+      <cat>Zeitwörter</cat>
+      <lection>11</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Zehnter im Monat</german>
+      <japanese>とおか</japanese>
+      <romaji>tooka</romaji>
+      <cat>Zeitwörter</cat>
       <lection>11</lection>
     </Vocabulary>
   </Database>
