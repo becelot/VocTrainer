@@ -49,10 +49,11 @@ namespace VocabularyTrainer.Flyouts
                 Vocabulary = labelCheck.Content.ToString(),
                 Solution =actualDictionary[labelCheck.Content.ToString()],
                 Entered =answerBox.Text,
-                Correct =(actualDictionary[labelCheck.Content.ToString()].Equals(answerBox.Text))
+                Correct =(actualDictionary[labelCheck.Content.ToString()].ToLower().Equals(answerBox.Text.ToLower()))
             });
 
             index++;
+            Helper.MainWindow.FlyoutCheckVocabulary.Header = "Check Vocabulary (" + index.ToString() + "," + actualDictionary.Keys.Count.ToString() + ")";
             if (index < actualDictionary.Keys.Count)
             {
                 answerBox.Text = "";
@@ -61,6 +62,7 @@ namespace VocabularyTrainer.Flyouts
             }
             else // Auswerten
             {
+                Helper.MainWindow.FlyoutCheckVocabulary.Header = "Erfolgreich: " + solutions.Aggregate(0, (x, y) => x + (y.Correct ? 1 : 0)).ToString() + " von " + actualDictionary.Keys.Count.ToString();
                 Helper.MainWindow.FlyoutCheckVocabulary.CloseButtonVisibility = Visibility.Visible;
                 Transistor.Content = evaluationGrid;
             }
