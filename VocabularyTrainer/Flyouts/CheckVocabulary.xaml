@@ -38,13 +38,15 @@
             </Controls:TransitioningContentControl.CustomVisualStates>
             <Grid Name="stdGrid">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="66*"/>
-                    <RowDefinition Height="75*"/>
-                    <RowDefinition Height="27*"/>
-                    <RowDefinition Height="75*"/>
+                    <RowDefinition Height="61*"/>
+                    <RowDefinition Height="70*"/>
+                    <RowDefinition Height="26*"/>
+                    <RowDefinition Height="70*"/>
+                    <RowDefinition Height="21*"/>
+                    <RowDefinition Height="70*"/>
                     <RowDefinition Height="23*"/>
-                    <RowDefinition Height="75*"/>
-                    <RowDefinition Height="304*"/>
+                    <RowDefinition Height="70*"/>
+                    <RowDefinition Height="207*"/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="39*"/>
@@ -59,6 +61,9 @@
                 </Viewbox>
                 <Viewbox Grid.Column="1" Grid.Row="5">
                     <Button Name="nextVocabulary" Click="nextVocabulary_Click" Content="Nächste Vokabel" MinWidth="342" Style="{StaticResource AccentedSquareButtonStyle}" FontSize="42.667" />
+                </Viewbox>
+                <Viewbox Grid.Column="1" Grid.Row="7">
+                    <Button Content="Abbrechen"  FontSize="42.667" MinWidth="342" Click="Button_Click"/>    
                 </Viewbox>
             </Grid>
         </Controls:TransitioningContentControl>

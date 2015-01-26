@@ -84,5 +84,11 @@ namespace VocabularyTrainer.Flyouts
                 this.nextVocabulary_Click(sender, null);
             }
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Helper.MainWindow.FlyoutCheckVocabulary.CloseButtonVisibility = Visibility.Visible;
+            Transistor.Content = evaluationGrid;
+        }
     }
 }

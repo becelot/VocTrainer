@@ -45,7 +45,7 @@
     </Vocabulary>
     <Vocabulary>
       <german>gehen</german>
-      <japanese>いきます</japanese>
+      <japanese>行きます</japanese>
       <romaji>ikimasu</romaji>
       <cat>Verben</cat>
       <lection>9</lection>
@@ -100,8 +100,8 @@
       <lection>9</lection>
     </Vocabulary>
     <Vocabulary>
-      <german>kommen</german>
-      <japanese>かえります</japanese>
+      <german>heimkehren</german>
+      <japanese>帰ります</japanese>
       <romaji>kaerimasu</romaji>
       <cat>Verben</cat>
       <lection>9</lection>
@@ -1043,6 +1043,258 @@
       <romaji>n</romaji>
       <cat>Schriftzeichen</cat>
       <lection>Katakana</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Gericht</german>
+      <japanese>りょうり</japanese>
+      <romaji>ryoori</romaji>
+      <cat>Nomen</cat>
+      <lection>6</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>lieblings~</german>
+      <japanese>すきな</japanese>
+      <romaji>sukina</romaji>
+      <cat>Präfix</cat>
+      <lection>6</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>nicht gern</german>
+      <japanese>きらいな</japanese>
+      <romaji>kiraina</romaji>
+      <cat>Präfix</cat>
+      <lection>6</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Geschäft</german>
+      <japanese>みせ</japanese>
+      <romaji>mise</romaji>
+      <cat>Nomen</cat>
+      <lection>6</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>lecker</german>
+      <japanese>おいしい</japanese>
+      <romaji>oishii</romaji>
+      <cat>Adjektiv</cat>
+      <lection>6</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>ekelhaft</german>
+      <japanese>まずい</japanese>
+      <romaji>mazui</romaji>
+      <cat>Adjektiv</cat>
+      <lection>6</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>teuer</german>
+      <japanese>たかい</japanese>
+      <romaji>takai</romaji>
+      <cat>Adjektiv</cat>
+      <lection>6</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>billig</german>
+      <japanese>やすい</japanese>
+      <romaji>yasui</romaji>
+      <cat>Adjektiv</cat>
+      <lection>6</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>schnell / früh</german>
+      <japanese>はやい</japanese>
+      <romaji>hayai</romaji>
+      <cat>Adjektiv</cat>
+      <lection>6</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>langsam / spät</german>
+      <japanese>おそい</japanese>
+      <romaji>osoi</romaji>
+      <cat>Adjektiv</cat>
+      <lection>6</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>ein Stück</german>
+      <japanese>ひとつ</japanese>
+      <romaji>hitotsu</romaji>
+      <cat>Stückzahlen</cat>
+      <lection>6</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>zwei Stücke</german>
+      <japanese>ふたつ</japanese>
+      <romaji>futatsu</romaji>
+      <cat>Stückzahlen</cat>
+      <lection>6</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>drei Stücke</german>
+      <japanese>まっつ</japanese>
+      <romaji>mittsu</romaji>
+      <cat>Stückzahlen</cat>
+      <lection>6</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>vier Stücke</german>
+      <japanese>よっつ</japanese>
+      <romaji>yottsu</romaji>
+      <cat>Stückzahlen</cat>
+      <lection>6</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>fünf Stück</german>
+      <japanese>いつつ</japanese>
+      <romaji>itsutsu</romaji>
+      <cat>Stückzahlen</cat>
+      <lection>6</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>das Beste~</german>
+      <japanese>いちばん</japanese>
+      <romaji>ichiban</romaji>
+      <cat>Präfix</cat>
+      <lection>6</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>welcher Art</german>
+      <japanese>どんな</japanese>
+      <romaji>donna</romaji>
+      <cat>Fragewörter</cat>
+      <lection>6</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>machen sie~</german>
+      <japanese>ください</japanese>
+      <romaji>kudasai</romaji>
+      <cat>Ausdruck</cat>
+      <lection>6</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Zeit</german>
+      <japanese>じかん</japanese>
+      <romaji>jikan</romaji>
+      <cat>Nomen</cat>
+      <lection>6</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Geld</german>
+      <japanese>おかね</japanese>
+      <romaji>okane</romaji>
+      <cat>Nomen</cat>
+      <lection>6</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Mitternacht</german>
+      <japanese>れいじ</japanese>
+      <romaji>reiji</romaji>
+      <cat>Zeitwörter</cat>
+      <lection>9</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>kommen</german>
+      <japanese>来ます</japanese>
+      <romaji>kimasu</romaji>
+      <cat>Verben</cat>
+      <lection>9</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german> Buch</german>
+      <japanese>本</japanese>
+      <romaji>hon</romaji>
+      <cat>Nomen</cat>
+      <lection>9</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>immer</german>
+      <japanese>いつも</japanese>
+      <romaji>itsumo</romaji>
+      <cat>Zeitwörter</cat>
+      <lection>9</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>jetzt</german>
+      <japanese>今</japanese>
+      <romaji>ima</romaji>
+      <cat>Zeitwörter</cat>
+      <lection>9</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>vorgestern</german>
+      <japanese>おととい</japanese>
+      <romaji>ototoi</romaji>
+      <cat>Zeitwörter</cat>
+      <lection>10</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>übermorgen</german>
+      <japanese>あさって</japanese>
+      <romaji>asatte</romaji>
+      <cat>Zeitwörter</cat>
+      <lection>10</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>letzter Monat</german>
+      <japanese>先月</japanese>
+      <romaji>sengetsu</romaji>
+      <cat>Zeitwörter</cat>
+      <lection>10</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>dieser Monat</german>
+      <japanese>今月</japanese>
+      <romaji>kongetsu</romaji>
+      <cat>Zeitwörter</cat>
+      <lection>10</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>nächster Monat</german>
+      <japanese>来月</japanese>
+      <romaji>raigetsu</romaji>
+      <cat>Zeitwörter</cat>
+      <lection>10</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>letztes Jahr</german>
+      <japanese>きょねん</japanese>
+      <romaji>kyonen</romaji>
+      <cat>Zeitwörter</cat>
+      <lection>10</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>dieses Jahr</german>
+      <japanese>ことし</japanese>
+      <romaji>kotoshi</romaji>
+      <cat>Zeitwörter</cat>
+      <lection>10</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>nächstes Jahr</german>
+      <japanese>らいねん</japanese>
+      <romaji>rainen</romaji>
+      <cat>Zeitwörter</cat>
+      <lection>10</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>von ~ bis ~</german>
+      <japanese>～から～まで</japanese>
+      <romaji>~kara~made</romaji>
+      <cat>Ausdruck</cat>
+      <lection>10</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Ferien / Pause</german>
+      <japanese>休み</japanese>
+      <romaji>yasumi</romaji>
+      <cat>Nomen</cat>
+      <lection>10</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>wie</german>
+      <japanese>どう</japanese>
+      <romaji>doo</romaji>
+      <cat>Fragewörter</cat>
+      <lection>10</lection>
     </Vocabulary>
   </Database>
 </VocabularyDatabase>
