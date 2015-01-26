@@ -611,13 +611,6 @@
       <lection>11</lection>
     </Vocabulary>
     <Vocabulary>
-      <german>Welches</german>
-      <japanese>どんあ</japanese>
-      <romaji>donna</romaji>
-      <cat>Fragewörter</cat>
-      <lection>11</lection>
-    </Vocabulary>
-    <Vocabulary>
       <german>sprechen</german>
       <japanese>話します</japanese>
       <romaji>hanachimasu</romaji>
@@ -1295,6 +1288,181 @@
       <romaji>doo</romaji>
       <cat>Fragewörter</cat>
       <lection>10</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Geburtstag</german>
+      <japanese>たんじょうび</japanese>
+      <romaji>tanjoobi</romaji>
+      <cat>Nomen</cat>
+      <lection>11</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Song</german>
+      <japanese>うた</japanese>
+      <romaji>uta</romaji>
+      <cat>Nomen</cat>
+      <lection>11</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>singen</german>
+      <japanese>うたいます</japanese>
+      <romaji>utaimasu</romaji>
+      <cat>Verben</cat>
+      <lection>11</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Lesen</german>
+      <japanese>どくしょ</japanese>
+      <romaji>dokusho</romaji>
+      <cat>Nomen</cat>
+      <lection>11</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Novelle</german>
+      <japanese>しょいせつ</japanese>
+      <romaji>shoosetsu</romaji>
+      <cat>Nomen</cat>
+      <lection>11</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Literatur</german>
+      <japanese>ぶんがく</japanese>
+      <romaji>bungaku</romaji>
+      <cat>Nomen</cat>
+      <lection>11</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Magazin</german>
+      <japanese>ざっし</japanese>
+      <romaji>sasshi</romaji>
+      <cat>Nomen</cat>
+      <lection>11</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Bild</german>
+      <japanese>え</japanese>
+      <romaji>e</romaji>
+      <cat>Nomen</cat>
+      <lection>11</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Teezeremonie</german>
+      <japanese>さどう</japanese>
+      <romaji>sadoo</romaji>
+      <cat>Nomen</cat>
+      <lection>11</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Gartenarbeit</german>
+      <japanese>いけばな</japanese>
+      <romaji>ikebana</romaji>
+      <cat>Nomen</cat>
+      <lection>11</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>entspannen</german>
+      <japanese>ゆっくりします</japanese>
+      <romaji>jukkuri-shimasu</romaji>
+      <cat>Verben</cat>
+      <lection>11</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Veranstaltung</german>
+      <japanese>イベント</japanese>
+      <romaji>ibento</romaji>
+      <cat>Nomen</cat>
+      <lection>12</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Spiel</german>
+      <japanese>しあい</japanese>
+      <romaji>shiai</romaji>
+      <cat>Nomen</cat>
+      <lection>12</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Feuerwerk</german>
+      <japanese>はなび</japanese>
+      <romaji>hanabi</romaji>
+      <cat>Nomen</cat>
+      <lection>12</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Feiertag</german>
+      <japanese>しゅくじつ</japanese>
+      <romaji>shukujitsu</romaji>
+      <cat>Nomen</cat>
+      <lection>12</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Jahreszeit</german>
+      <japanese>きせつ</japanese>
+      <romaji>kisetsu</romaji>
+      <cat>Nomen</cat>
+      <lection>12</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Frühling</german>
+      <japanese>はる</japanese>
+      <romaji>haru</romaji>
+      <cat>Nomen</cat>
+      <lection>12</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Sommer</german>
+      <japanese>なつ</japanese>
+      <romaji>natsu</romaji>
+      <cat>Nomen</cat>
+      <lection>12</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Herbst</german>
+      <japanese>あき</japanese>
+      <romaji>Herbst</romaji>
+      <cat>Nomen</cat>
+      <lection>12</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Winter</german>
+      <japanese>ふゆ</japanese>
+      <romaji>fuyu</romaji>
+      <cat>Nomen</cat>
+      <lection>12</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Stadt</german>
+      <japanese>まち</japanese>
+      <romaji>machi</romaji>
+      <cat>Nomen</cat>
+      <lection>12</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>zusammen</german>
+      <japanese>いっしょ</japanese>
+      <romaji>issho</romaji>
+      <cat>Adverb</cat>
+      <lection>12</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>nächstes mal</german>
+      <japanese>こんど</japanese>
+      <romaji>kondo</romaji>
+      <cat>Zeitwörter</cat>
+      <lection>12</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>noch einmal</german>
+      <japanese>また</japanese>
+      <romaji>mata</romaji>
+      <cat>Adjektiv</cat>
+      <lection>12</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Das ist schade</german>
+      <japanese>ざんねん　です</japanese>
+      <romaji>zannen desu</romaji>
+      <cat>Ausdruck</cat>
+      <lection>12</lection>
     </Vocabulary>
   </Database>
 </VocabularyDatabase>
