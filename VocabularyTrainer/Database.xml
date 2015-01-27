@@ -52,7 +52,7 @@
     </Vocabulary>
     <Vocabulary>
       <german>lernen</german>
-      <japanese>べきょうします</japanese>
+      <japanese>べんきょうします</japanese>
       <romaji>benkyoo-shimasu</romaji>
       <cat>Verben</cat>
       <lection>9</lection>
@@ -625,14 +625,14 @@
       <lection>11</lection>
     </Vocabulary>
     <Vocabulary>
-      <german>~ Monat</german>
+      <german>~Monat</german>
       <japanese>月</japanese>
       <romaji>gatsu</romaji>
       <cat>Zeitwörter</cat>
       <lection>11</lection>
     </Vocabulary>
     <Vocabulary>
-      <german>~ Tag</german>
+      <german>~Tag</german>
       <japanese>日</japanese>
       <romaji>nichi</romaji>
       <cat>Zeitwörter</cat>
@@ -1115,21 +1115,21 @@
       <lection>6</lection>
     </Vocabulary>
     <Vocabulary>
-      <german>zwei Stücke</german>
+      <german>zwei Stück</german>
       <japanese>ふたつ</japanese>
       <romaji>futatsu</romaji>
       <cat>Stückzahlen</cat>
       <lection>6</lection>
     </Vocabulary>
     <Vocabulary>
-      <german>drei Stücke</german>
-      <japanese>まっつ</japanese>
+      <german>drei Stück</german>
+      <japanese>みっつ</japanese>
       <romaji>mittsu</romaji>
       <cat>Stückzahlen</cat>
       <lection>6</lection>
     </Vocabulary>
     <Vocabulary>
-      <german>vier Stücke</german>
+      <german>vier Stück</german>
       <japanese>よっつ</japanese>
       <romaji>yottsu</romaji>
       <cat>Stückzahlen</cat>
@@ -1461,6 +1461,20 @@
       <german>Das ist schade</german>
       <japanese>ざんねん　です</japanese>
       <romaji>zannen desu</romaji>
+      <cat>Ausdruck</cat>
+      <lection>12</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Selbstverständlich</german>
+      <japanese>もちろん</japanese>
+      <romaji>mochiron</romaji>
+      <cat>Ausdruck</cat>
+      <lection>12</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Ich freue mich drauf</german>
+      <japanese>たのしみです</japanese>
+      <romaji>tanoshimi desu</romaji>
       <cat>Ausdruck</cat>
       <lection>12</lection>
     </Vocabulary>
