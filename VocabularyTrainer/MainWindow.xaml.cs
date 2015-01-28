@@ -32,6 +32,20 @@ namespace VocabularyTrainer
 
             VocabularyDatabase.Load();
 
+            // Add categories and lections
+            foreach (Vocabulary v in VocabularyDatabase.Instance.vocs)
+            {
+                if (!Config.Instance.categories.Contains(v.cat))
+                {
+                    Config.Instance.categories.Add(v.cat);
+                }
+                if (!Config.Instance.lections.Contains(v.lection))
+                {
+                    Config.Instance.lections.Add(v.lection);
+                }
+            }
+
+            Config.Save();
 
             foreach (string s in Config.Instance.categories)
             {
@@ -118,11 +132,7 @@ namespace VocabularyTrainer
 
         private void ButtonAddVoc_Click(object sender, RoutedEventArgs e)
         {
-            //FlyoutAddVocabulary.Height = 0.2* this.ActualHeight;
             FlyoutAddVocabulary.IsOpen = true;
-            //Logger.WriteLine(this.ActualHeight.ToString(), "ActualHeight");
-            //Logger.WriteLine(this.FlyoutAddVocabulary.Height.ToString(), "Flyout Height");
-            
         }
 
         internal class WindowAspectRatio
