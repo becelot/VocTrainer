@@ -1471,5 +1471,222 @@
       <cat>Ausdruck</cat>
       <lection>12</lection>
     </Vocabulary>
+    <Vocabulary>
+      <german>1</german>
+      <japanese>一</japanese>
+      <romaji>ichi</romaji>
+      <cat>Zahlen</cat>
+      <lection>10</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>2</german>
+      <japanese>二</japanese>
+      <romaji>ni</romaji>
+      <cat>Zahlen</cat>
+      <lection>10</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>3</german>
+      <japanese>三</japanese>
+      <romaji>san</romaji>
+      <cat>Zahlen</cat>
+      <lection>10</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>4</german>
+      <japanese>四</japanese>
+      <romaji>yon</romaji>
+      <cat>Zahlen</cat>
+      <lection>10</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>5</german>
+      <japanese>五</japanese>
+      <romaji>go</romaji>
+      <cat>Zahlen</cat>
+      <lection>10</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>6</german>
+      <japanese>六</japanese>
+      <romaji>roku</romaji>
+      <cat>Zahlen</cat>
+      <lection>10</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>7</german>
+      <japanese>七</japanese>
+      <romaji>nana</romaji>
+      <cat>Zahlen</cat>
+      <lection>10</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>8</german>
+      <japanese>八</japanese>
+      <romaji>hachi</romaji>
+      <cat>Zahlen</cat>
+      <lection>10</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>9</german>
+      <japanese>九</japanese>
+      <romaji>kyuu</romaji>
+      <cat>Zahlen</cat>
+      <lection>10</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>10</german>
+      <japanese>十</japanese>
+      <romaji>juu</romaji>
+      <cat>Zahlen</cat>
+      <lection>10</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>hell</german>
+      <japanese>あかるい</japanese>
+      <romaji>akarui</romaji>
+      <cat>Adjektiv</cat>
+      <lection>7</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>dunkel</german>
+      <japanese>くらい</japanese>
+      <romaji>kurai</romaji>
+      <cat>Adjektiv</cat>
+      <lection>7</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>neu</german>
+      <japanese>あたらしい</japanese>
+      <romaji>atarashii</romaji>
+      <cat>Adjektiv</cat>
+      <lection>7</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>alt</german>
+      <japanese>ふるい</japanese>
+      <romaji>furui</romaji>
+      <cat>Adjektiv</cat>
+      <lection>7</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>groß</german>
+      <japanese>おおきい</japanese>
+      <romaji>ookii</romaji>
+      <cat>Adjektiv</cat>
+      <lection>7</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>klein</german>
+      <japanese>ちいさい</japanese>
+      <romaji>chiisai</romaji>
+      <cat>Adjektiv</cat>
+      <lection>7</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>aufgeräumt/sauber</german>
+      <japanese>きれい</japanese>
+      <romaji>kiree</romaji>
+      <cat>Adjektiv</cat>
+      <lection>7</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>unaufgeräumt/dreckig</german>
+      <japanese>きたない</japanese>
+      <romaji>kitanai</romaji>
+      <cat>Adjektiv</cat>
+      <lection>7</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>groß/geräumig</german>
+      <japanese>ひろい</japanese>
+      <romaji>hiroi</romaji>
+      <cat>Adjektiv</cat>
+      <lection>7</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>klein/schmal</german>
+      <japanese>せまい</japanese>
+      <romaji>semai</romaji>
+      <cat>Adjektiv</cat>
+      <lection>7</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>toll/gut</german>
+      <japanese>いい</japanese>
+      <romaji>ii</romaji>
+      <cat>Adjektiv</cat>
+      <lection>7</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>arbeiten</german>
+      <japanese>はたらきます</japanese>
+      <romaji>hatarakimasu</romaji>
+      <cat>Verben</cat>
+      <lection>7</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>spieler/amüsieren</german>
+      <japanese>あそびます</japanese>
+      <romaji>asobimasu</romaji>
+      <cat>Verben</cat>
+      <lection>7</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Reise</german>
+      <japanese>りよこう</japanese>
+      <romaji>riyokoo</romaji>
+      <cat>Nomen</cat>
+      <lection>7</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Gesicht waschen</german>
+      <japanese>かおを あらいます</japanese>
+      <romaji>kao o araimasu</romaji>
+      <cat>Verben</cat>
+      <lection>9</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Zähne putzen</german>
+      <japanese>はを　みがきます</japanese>
+      <romaji>ha o migakimasu</romaji>
+      <cat>Verben</cat>
+      <lection>9</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Make up auftragen</german>
+      <japanese>おけしょうを　します</japanese>
+      <romaji>okeshoo o shimasu</romaji>
+      <cat>Verben</cat>
+      <lection>9</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>rasieren</german>
+      <japanese>ひげを　そります</japanese>
+      <romaji>hige o sorimasu</romaji>
+      <cat>Verben</cat>
+      <lection>9</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>sich anziehen</german>
+      <japanese>ふくを　きます</japanese>
+      <romaji>fuku o kimasu</romaji>
+      <cat>Verben</cat>
+      <lection>9</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>sich ausziehen</german>
+      <japanese>ふくを　ぬぎます</japanese>
+      <romaji>fuku o nugimasu</romaji>
+      <cat>Verben</cat>
+      <lection>9</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Wäsche waschen</german>
+      <japanese>せんたくを　します</japanese>
+      <romaji>sentaku o shimasu</romaji>
+      <cat>Verben</cat>
+      <lection>9</lection>
+    </Vocabulary>
   </Database>
 </VocabularyDatabase>
