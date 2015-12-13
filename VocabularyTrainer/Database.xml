@@ -2591,7 +2591,7 @@
       <cat>Kanji</cat>
       <lection>Kanji</lection>
     </Vocabulary>
-	    <Vocabulary>
+    <Vocabulary>
       <german>einschalten</german>
       <japanese>つける</japanese>
       <romaji>tsukemasu</romaji>
@@ -2978,7 +2978,7 @@
     </Vocabulary>
     <Vocabulary>
       <german>kurz</german>
-      <japanese>みしかい</japanese>
+      <japanese>みじかい</japanese>
       <romaji>短い</romaji>
       <cat>Adjektiv</cat>
       <lection>16</lection>
@@ -3040,7 +3040,7 @@
       <lection>16</lection>
     </Vocabulary>
     <Vocabulary>
-      <german>Zahl</german>
+      <german>Zahn</german>
       <japanese>は</japanese>
       <romaji>歯</romaji>
       <cat>Nomen</cat>
