@@ -80,7 +80,8 @@ namespace VocabularyTrainer.Flyouts
 
         private void textRom_GotKeyboardFocus(object sender, KeyboardFocusChangedEventArgs e)
         {
-            Helper.SetInputLanguage(Config.Instance.DefaultLang);
+            Helper.SetInputLanguageByName("japanese");
+            //Helper.SetInputLanguage(Config.Instance.DefaultLang);
         }
     }
 }
