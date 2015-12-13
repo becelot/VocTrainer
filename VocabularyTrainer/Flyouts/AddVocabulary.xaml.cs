@@ -53,7 +53,7 @@ namespace VocabularyTrainer.Flyouts
 
         private void canAddPropertyChanged(object sender, TextChangedEventArgs e)
         {
-            if(textGerman.Text != "" && textJap.Text != "" && textRom.Text != "" && comboCategory.SelectedValue != null && !comboCategory.SelectedValue.Equals("") && comboLection.SelectedValue != null && !comboLection.SelectedValue.Equals(""))
+            if(textGerman.Text != "" && textJap.Text  != "" && comboCategory.SelectedValue != null && !comboCategory.SelectedValue.Equals("") && comboLection.SelectedValue != null && !comboLection.SelectedValue.Equals(""))
             {
                 buttonAdd.IsEnabled = true;
             } else
