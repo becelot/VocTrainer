@@ -3270,5 +3270,75 @@
       <cat>Ausdruck</cat>
       <lection>17</lection>
     </Vocabulary>
+    <Vocabulary>
+      <german>können</german>
+      <japanese>できます</japanese>
+      <romaji>できます</romaji>
+      <cat>Verben</cat>
+      <lection>18</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>waschen</german>
+      <japanese>あらう</japanese>
+      <romaji>洗う</romaji>
+      <cat>Verben</cat>
+      <lection>18</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Instrument spielen</german>
+      <japanese>ひく</japanese>
+      <romaji>弾く</romaji>
+      <cat>Verben</cat>
+      <lection>18</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>singen</german>
+      <japanese>うたう</japanese>
+      <romaji>歌う</romaji>
+      <cat>Verben</cat>
+      <lection>18</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>sammeln</german>
+      <japanese>あつめる</japanese>
+      <romaji>集める</romaji>
+      <cat>Verben</cat>
+      <lection>18</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>wegwerfen</german>
+      <japanese>すてる</japanese>
+      <romaji>捨てる</romaji>
+      <cat>Verben</cat>
+      <lection>18</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>wechseln</german>
+      <japanese>かえる</japanese>
+      <romaji>換える</romaji>
+      <cat>Verben</cat>
+      <lection>18</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>fahren</german>
+      <japanese>うんてんする</japanese>
+      <romaji>運転する</romaji>
+      <cat>Verben</cat>
+      <lection>18</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>reservieren</german>
+      <japanese>よやくする</japanese>
+      <romaji>予約する</romaji>
+      <cat>Verben</cat>
+      <lection>18</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Bargeld</german>
+      <japanese>げんきん</japanese>
+      <romaji>現金</romaji>
+      <cat>Nomen</cat>
+      <lection>18</lection>
+    </Vocabulary>
   </Database>
 </VocabularyDatabase>
