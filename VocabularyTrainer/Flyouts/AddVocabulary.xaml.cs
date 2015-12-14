@@ -83,5 +83,10 @@ namespace VocabularyTrainer.Flyouts
             Helper.SetInputLanguageByName("japanese");
             //Helper.SetInputLanguage(Config.Instance.DefaultLang);
         }
+
+        private void textGerman_GotKeyboardFocus(object sender, KeyboardFocusChangedEventArgs e)
+        {
+            Helper.SetInputLanguage(Config.Instance.DefaultLang);
+        }
     }
 }
