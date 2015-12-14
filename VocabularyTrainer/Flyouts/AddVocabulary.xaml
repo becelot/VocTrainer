@@ -29,12 +29,12 @@
             <ColumnDefinition Width="72*"/>
             <ColumnDefinition Width="27*"/>
         </Grid.ColumnDefinitions>
-        <TextBox x:Name="textGerman" Grid.Column="1" Grid.Row="2" TextWrapping="Wrap" Text="" Grid.ColumnSpan="2" TextChanged="canAddPropertyChanged" KeyDown="textGerman_KeyDown"/>
+        <TextBox x:Name="textGerman" Grid.Column="1" Grid.Row="2" TextWrapping="Wrap" Text="" Grid.ColumnSpan="2" TextChanged="canAddPropertyChanged" KeyDown="textGerman_KeyDown" GotKeyboardFocus="textGerman_GotKeyboardFocus"/>
         <Label x:Name="labelGerman" Content="Deutsch" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2"/>
         <TextBox x:Name="textJap" Grid.Column="4" Grid.Row="2" TextWrapping="Wrap" Text="" Grid.ColumnSpan="3" TextChanged="canAddPropertyChanged" KeyDown="textGerman_KeyDown" GotKeyboardFocus="textJap_GotKeyboardFocus"/>
         <Label x:Name="labelJap" Content="Japanisch" Grid.Column="4" Grid.Row="1" Grid.ColumnSpan="3"/>
         <TextBox x:Name="textRom" Grid.Column="8" Grid.Row="2" TextWrapping="Wrap" Text="" Grid.ColumnSpan="3" TextChanged="canAddPropertyChanged" KeyDown="textGerman_KeyDown" GotKeyboardFocus="textRom_GotKeyboardFocus"/>
-        <Label x:Name="labelRomaji" Content="Romaji" Grid.Column="8" Grid.Row="1" Grid.ColumnSpan="5"/>
+        <Label x:Name="labelRomaji" Content="Kanji" Grid.Column="8" Grid.Row="1" Grid.ColumnSpan="5"/>
         <ComboBox x:Name="comboCategory" Grid.Column="2" Grid.ColumnSpan="3" Grid.Row="4" SelectionChanged="comboCategory_SelectionChanged" Margin="0,0,0,2" Grid.RowSpan="2" KeyDown="textGerman_KeyDown">
         </ComboBox>
         <ComboBox x:Name="comboLection" Grid.Column="6" Grid.ColumnSpan="3" SelectionChanged="comboLection_SelectionChanged" Grid.Row="4" Margin="0,0,0,2" Grid.RowSpan="2"  KeyDown="textGerman_KeyDown">
