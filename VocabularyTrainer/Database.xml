@@ -3424,5 +3424,61 @@
       <cat>Nomen</cat>
       <lection>19</lection>
     </Vocabulary>
+    <Vocabulary>
+      <german>benötigen</german>
+      <japanese>いる</japanese>
+      <romaji>要る</romaji>
+      <cat>Verben</cat>
+      <lection>20</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>untersuchen</german>
+      <japanese>しらべる</japanese>
+      <romaji>調べる</romaji>
+      <cat>Verben</cat>
+      <lection>20</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>reparieren</german>
+      <japanese>しゅうりする</japanese>
+      <romaji>修理する</romaji>
+      <cat>Verben</cat>
+      <lection>20</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>ich</german>
+      <japanese>ぼく</japanese>
+      <romaji>僕</romaji>
+      <cat>Ausdruck</cat>
+      <lection>20</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Anfang</german>
+      <japanese>はじめ</japanese>
+      <romaji>初め</romaji>
+      <cat>Nomen</cat>
+      <lection>20</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Ende</german>
+      <japanese>おわり</japanese>
+      <romaji>終わり</romaji>
+      <cat>Nomen</cat>
+      <lection>20</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Ich bin satt</german>
+      <japanese>おなかがいっぱいです</japanese>
+      <romaji>おなかがいっぱいです</romaji>
+      <cat>Ausdruck</cat>
+      <lection>20</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>~, aber</german>
+      <japanese>～けど</japanese>
+      <romaji>～けど</romaji>
+      <cat>Ausdruck</cat>
+      <lection>20</lection>
+    </Vocabulary>
   </Database>
 </VocabularyDatabase>
