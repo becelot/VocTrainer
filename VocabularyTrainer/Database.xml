@@ -3340,5 +3340,82 @@
       <cat>Nomen</cat>
       <lection>18</lection>
     </Vocabulary>
+    <Vocabulary>
+      <german>klettern</german>
+      <japanese>のぼる</japanese>
+      <romaji>登る</romaji>
+      <cat>Verben</cat>
+      <lection>19</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>übernachten</german>
+      <japanese>とまる</japanese>
+      <romaji>泊る</romaji>
+      <cat>Verben</cat>
+      <lection>19</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>sauber machen</german>
+      <japanese>そうじする</japanese>
+      <romaji>掃除する</romaji>
+      <cat>Verben</cat>
+      <lection>19</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>werden</german>
+      <japanese>なります</japanese>
+      <romaji>なります</romaji>
+      <cat>Verben</cat>
+      <lection>19</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>müde</german>
+      <japanese>ねむい</japanese>
+      <romaji>眠い</romaji>
+      <cat>Adjektiv</cat>
+      <lection>19</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>stark</german>
+      <japanese>つよい</japanese>
+      <romaji>強い</romaji>
+      <cat>Adjektiv</cat>
+      <lection>19</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>einmal</german>
+      <japanese>いちど</japanese>
+      <romaji>一度</romaji>
+      <cat>Adverb</cat>
+      <lection>19</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>kein einziges mal</german>
+      <japanese>いちども</japanese>
+      <romaji>一度も</romaji>
+      <cat>Adverb</cat>
+      <lection>19</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>allmählich</german>
+      <japanese>だんだん</japanese>
+      <romaji>だんだん</romaji>
+      <cat>Adjektiv</cat>
+      <lection>19</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>bald</german>
+      <japanese>もうすぐ</japanese>
+      <romaji>もうすぐ</romaji>
+      <cat>Zeitwörter</cat>
+      <lection>19</lection>
+    </Vocabulary>
+    <Vocabulary>
+      <german>Danke!</german>
+      <japanese>おかげさまで</japanese>
+      <romaji>おかげさまで</romaji>
+      <cat>Ausdruck</cat>
+      <lection>19</lection>
+    </Vocabulary>
   </Database>
 </VocabularyDatabase>
