@@ -3417,5 +3417,12 @@
       <cat>Ausdruck</cat>
       <lection>19</lection>
     </Vocabulary>
+    <Vocabulary>
+      <german>körperliche Verfassung</german>
+      <japanese>ちょうし</japanese>
+      <romaji>銚子</romaji>
+      <cat>Nomen</cat>
+      <lection>19</lection>
+    </Vocabulary>
   </Database>
 </VocabularyDatabase>
